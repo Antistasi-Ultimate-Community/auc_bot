@@ -9,6 +9,9 @@ or
 ### Manual Requirements:
 Create a `bot_token.py` file and inside it add these 2 variables:
 ```py
-bot_token = BOT_TOKEN
+bot_token = BOT_TOKEN # Replace with the bot token, as string
 debug = False
 ```
+
+# Features:
+A ton of slash commands to make life easier.
