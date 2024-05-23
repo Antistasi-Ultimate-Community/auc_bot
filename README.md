@@ -13,7 +13,5 @@ bot_token = BOT_TOKEN # Replace with the bot token, as string
 debug = False
 ```
 
-test
-
 # Features:
 A ton of slash commands to make life easier.
