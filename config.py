@@ -28,13 +28,15 @@ print(f"{day}_{time}")
 if (debug):
     #DEBUG
     guild_id = discord.Object(599612913879351300)
+    guild_roles_admin = [599615857378983973]
     guild_roles_moderator = [599615857378983973]
     guild_channel_bot = 1241765042597265499
     guild_name_bot = "AUC"
 else:
     #NORMAL
     guild_id = discord.Object(817005365740044289)
-    guild_roles_moderator = [817012725183807509]
+    guild_roles_admin = [817012725183807509] # Admin
+    guild_roles_moderator = [817012746608443412, 1143194227187122208, 1016040774581882950] # Moderator, Staff, Dev
     guild_channel_bot = 817722186486775808
     guild_name_bot = "AUC"
 

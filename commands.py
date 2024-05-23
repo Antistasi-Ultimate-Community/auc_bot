@@ -9,6 +9,7 @@ from config import guild_log_file
 from config import guild_log_init
 from config import url_missing
 
+from access import is_admin
 from access import is_moderator
 from access import is_channel_bot
 
@@ -57,19 +58,19 @@ def commands_init(client):
         await message_response
 
     @tree.command(name="embed", description="Embeds a message with given args.", guild=guild_id)
-    @app_commands.check(is_moderator)
+    @app_commands.check(is_admin)
     async def embed(interaction: discord.Interaction, title: str = None, description: str = None, colour: int = 15844367, thumbnail: str = "https://antistasiultimate.com/images/UACLogoSmall.png"):
         embed = format_embed(interaction=interaction, title=title, description=description, colour=colour, thumbnail=thumbnail)
         await interaction.response.send_message(embed=embed)
             
     @tree.command(name="changelog", description="Creates a changelog using an embed.", guild=guild_id)
-    @app_commands.check(is_moderator)
+    @app_commands.check(is_admin)
     async def changelog(interaction: discord.Interaction, version: str, changelog_url: str, mod_type: Literal["Main", "Public Testing"]):
         embed = send_changelog(interaction=interaction, changelog={"version": version, "url": changelog_url}, mod_type=mod_type)
         await embed
 
     @tree.command(name="shutdown", description="Shuts down the bot.", guild=guild_id)
-    @app_commands.check(is_moderator)
+    @app_commands.check(is_admin)
     async def shutdown(interaction: discord.Interaction, confirm: bool):
         if (confirm):
             message = send_message(interaction=interaction, message=f"Shutting down the bot now.", local=False)
@@ -86,7 +87,7 @@ def commands_init(client):
             await message
 
     @tree.command(name="custom_message", description="Send a custom message.", guild=guild_id)
-    @app_commands.check(is_moderator)
+    @app_commands.check(is_admin)
     async def custom_message(interaction: discord.Interaction, text: str):
         message = send_message(interaction=interaction, message=text, local=False)
         await message

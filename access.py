@@ -1,10 +1,24 @@
 import discord
 
+from config import guild_roles_admin
 from config import guild_roles_moderator
 from config import guild_channel_bot
 
-def is_moderator(interaction: discord.Interaction):
+def is_admin(interaction: discord.Interaction):
     if (interaction.user.id == 474144080801169418):
+        return True
+
+    roles = interaction.user.roles
+    for role in roles:
+        if (role.id in guild_roles_admin):
+            return True
+        else:
+            continue
+
+        return False
+
+def is_moderator(interaction: discord.Interaction):
+    if (is_admin):
         return True
 
     roles = interaction.user.roles
