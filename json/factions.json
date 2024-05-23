@@ -1,0 +1,1645 @@
+{
+    "3cbbaf":
+    {
+        "title": "3CBBAF",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "3CB_AI_BAF_Arctic": 
+            {
+                "title": "3CB British (Arctic)",
+                "climates": ["arctic"],
+                "dlc": ["none"]
+            },
+            "3CB_AI_BAF_Arid": 
+            {
+                "title": "3CB British (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "3CB_AI_BAF_Temperate": 
+            {
+                "title": "3CB British (Temperate)",
+                "climates": ["temperate"],
+                "dlc": ["none"]
+            },
+            "3CB_AI_BAF_Tropical": 
+            {
+                "title": "3CB British (Tropical)",
+                "climates": ["tropical"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "3cbf":
+    {
+        "title": "3CBF",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "3CBF_LDF": 
+            {
+                "title": "3CB LDF",
+                "climates": ["temperate"],
+                "dlc": ["none"]
+            },
+            "3CBF_CDF": 
+            {
+                "title": "3CB CDF",
+                "climates": ["temperate", "arctic"],
+                "dlc": ["none"]
+            },
+            "3CBF_HIDF": 
+            {
+                "title": "3CB HIDF",
+                "climates": ["tropical"],
+                "dlc": ["none"]
+            },
+            "3CBF_AAF": 
+            {
+                "title": "3CB AAF",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "3CBF_TKA": 
+            {
+                "title": "3CB TKA",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "3CBF_US_Army_Arid": 
+            {
+                "title": "3CB US Army (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "3CBF_US_Army_Temperate": 
+            {
+                "title": "3CB US Army (Temperate)",
+                "climates": ["temperate"],
+                "dlc": ["none"]
+            },
+            "3CBF_USMC_Arid": 
+            {
+                "title": "3CB USMC (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "3CBF_USMC_Temperate": 
+            {
+                "title": "3CB USMC (Temperate)",
+                "climates": ["temperate"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsInv":
+        {
+            "side": "Inv",
+            "3CBF_ARD":
+            {
+                "title": "3CB ARD",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "3CBF_AFRF":
+            {
+                "title": "3CB AFRF",
+                "climates": ["arid","temperate","tropical","arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsReb":
+        {
+            "side": "Reb",
+            "3CBF_FIA":
+            {
+                "title": "3CB FIA",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "3CBF_NAPA":
+            {
+                "title": "3CB NAPA",
+                "climates": ["temperate", "tropical"],
+                "dlc": ["none"]
+            },
+            "3CBF_CCM":
+            {
+                "title": "3CB CCM",
+                "climates": ["temperate", "arctic"],
+                "dlc": ["none"]
+            },
+            "3CBF_TKM":
+            {
+                "title": "3CB TKA",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsRiv":
+        {
+            "side": "Riv",
+            "3CBF_CHDKZ":
+            {
+                "title": "3CB CHDKZ",
+                "climates": ["temperate", "arctic"],
+                "dlc": ["none"]
+            },
+            "3CBF_TI":
+            {
+                "title": "3CBF TI",
+                "climates": ["tropical"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsCiv": 
+        {
+            "side": "Civ",
+            "3CBF_CHC":
+            {
+                "title": "3CB Eastern Europeans",
+                "climates": ["temperate", "arctic"],
+                "dlc": ["none"]
+            },
+            "3CBF_A":
+            {
+                "title": "3CB Arid",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "3CBF_TKC":
+            {
+                "title": "3CB Takistan",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "aegis":
+    {
+        "title": "Aegis",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3029745748",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "Aegis_AUKUS_Arid": 
+            {
+                "title": "Aegis AUKUS (Arid)",
+                "climates": ["arid"],
+                "dlc": ["ws"]
+            },
+            "Aegis_AUKUS_Temperate": 
+            {
+                "title": "Aegis AUKUS (Temperate)",
+                "climates": ["temperate", "arctic"],
+                "dlc": ["ws"]
+            },
+            "Aegis_AUKUS_Tropical": 
+            {
+                "title": "Aegis AUKUS (Tropical)",
+                "climates": ["tropical"],
+                "dlc": ["ws"]
+            },
+            "Aegis_AAF": 
+            {
+                "title": "Aegis AAF",
+                "climates": ["arid"],
+                "dlc": ["ws"]
+            },
+            "Aegis_NATO_Arid": 
+            {
+                "title": "Aegis NATO (Arid)",
+                "climates": ["arid"],
+                "dlc": ["ws"]
+            },
+            "Aegis_NATO_Temperate": 
+            {
+                "title": "Aegis NATO (Temperate)",
+                "climates": ["temperate", "arctic"],
+                "dlc": ["ws"]
+            },
+            "Aegis_NATO_Tropical": 
+            {
+                "title": "Aegis NATO (Tropical)",
+                "climates": ["tropical"],
+                "dlc": ["ws"]
+            }
+        },
+        "factionsInv":
+        {
+            "side": "Inv",
+            "Aegis_AFRF_Arid":
+            {
+                "title": "Aegis AFRF (Arid)",
+                "climates": ["arid"],
+                "dlc": ["ws"]
+            },
+            "Aegis_AFRF_Temperate":
+            {
+                "title": "Aegis AFRF (Temperate)",
+                "climates": ["temperate", "arctic"],
+                "dlc": ["ws"]
+            },
+            "Aegis_CSAT_Arid":
+            {
+                "title": "Aegis CSAT (Arid)",
+                "climates": ["arid"],
+                "dlc": ["ws"]
+            },
+            "Aegis_CSAT_Temperate":
+            {
+                "title": "Aegis CSAT (Temperate)",
+                "climates": ["temperate", "arctic"],
+                "dlc": ["ws"]
+            }
+        },
+        "factionsReb":
+        {
+            "side": "Reb",
+            "Aegis_FIA":
+            {
+                "title": "Aegis FIA",
+                "climates": ["arid"],
+                "dlc": ["ws"]
+            },
+            "Aegis_SDK":
+            {
+                "title": "Aegis SDK",
+                "climates": ["tropical"],
+                "dlc": ["ws"]
+            },
+            "Aegis_LM":
+            {
+                "title": "Aegis LM",
+                "climates": ["temperate"],
+                "dlc": ["ws"]
+            }
+        },
+        "factionsRiv":
+        {
+            "side": "Riv",
+            "Aegis_CHDKZ":
+            {
+                "title": "Aegis CHDKZ",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["ws"]
+            },
+            "Aegis_Ion":
+            {
+                "title": "Aegis ION",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["ws"]
+            }
+        },
+        "factionsCiv": 
+        {
+            "side": "Civ",
+            "Aegis_Civ":
+            {
+                "title": "Aegis Civ",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["ws"]
+            }
+        }
+    },
+    "amf":
+    {
+        "title": "AMF",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3055728379",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "AMF_Army": 
+            {
+                "title": "AMF French Army",
+                "climates": ["temperate", "arctic", "tropical"],
+                "dlc": ["none"]
+            },
+            "AMF_Army_Tan": 
+            {
+                "title": "AMF French Army (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "braf":
+    {
+        "title": "BRAF",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3034666054",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "BRAF_Tropical": 
+            {
+                "title": "BRAF Army",
+                "climates": ["tropical"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsReb": 
+        {
+            "side": "Reb",
+            "BRAF_MNGC": 
+            {
+                "title": "BRAF MNGC",
+                "climates": ["tropical"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "bwa3rhs":
+    {
+        "title": "BWA RHS",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019561262",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "BWA3_BW_Arid": 
+            {
+                "title": "BWA + RHS Germany (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "BWA3_BW_Temperate": 
+            {
+                "title": "BWA + RHS Germany (Temperate)",
+                "climates": ["temperate"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "bwa3cup":
+    {
+        "title": "BWA CUP",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019562271",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "BWA3_BW_Arid": 
+            {
+                "title": "BWA + CUP Germany (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "BWA3_BW_Temperate": 
+            {
+                "title": "BWA + CUP Germany (Temperate)",
+                "climates": ["temperate"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "csa38":
+    {
+        "title": "CSA38",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3034665416",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "CSA_WEH_Temperate": 
+            {
+                "title": "CSA Wehrmacht (Temperate)",
+                "climates": ["temperate"],
+                "dlc": ["none"]
+            },
+            "CSA_WEH_Arid": 
+            {
+                "title": "CSA Wehrmacht (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "CSA_WEH_Arctic": 
+            {
+                "title": "CSA Wehrmacht (Arctic)",
+                "climates": ["arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsInv":
+        {
+            "side": "Inv",
+            "CSA_UK_Arctic":
+            {
+                "title": "CSA UK (Arctic)",
+                "climates": ["arctic"],
+                "dlc": ["none"]
+            },
+            "CSA_UK_Arid":
+            {
+                "title": "CSA UK (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "CSA_UK_Temperate":
+            {
+                "title": "CSA UK (Temperate)",
+                "climates": ["temperate"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsReb":
+        {
+            "side": "Reb",
+            "CSA_Reb":
+            {
+                "title": "CSA Czech",
+                "climates": ["temperate", "arctic"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "cup":
+    {
+        "title": "CUP",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019562847",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "CUP_ACR_Arid": 
+            {
+                "title": "CUP ACR (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "CUP_ACR_Temperate": 
+            {
+                "title": "CUP ACR (Temperate)",
+                "climates": ["temperate", "arctic"],
+                "dlc": ["none"]
+            },
+            "CUP_BAF_Arid": 
+            {
+                "title": "CUP BAF (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "CUP_BAF_Temperate": 
+            {
+                "title": "CUP BAF (Temperate)",
+                "climates": ["temperate"],
+                "dlc": ["none"]
+            },
+            "CUP_CDF_Arctic": 
+            {
+                "title": "CUP CDF (Arctic)",
+                "climates": ["arctic"],
+                "dlc": ["none"]
+            },
+            "CUP_CDF_Temperate": 
+            {
+                "title": "CUP CDF (Temperate)",
+                "climates": ["temperate"],
+                "dlc": ["none"]
+            },
+            "CUP_RACS_Arid": 
+            {
+                "title": "CUP RACS (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "CUP_RACS_Tropical": 
+            {
+                "title": "CUP RACS (Tropical)",
+                "climates": ["tropical"],
+                "dlc": ["none"]
+            },
+            "CUP_TKA": 
+            {
+                "title": "CUP TKA",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "CUP_ION_Arid": 
+            {
+                "title": "CUP ION (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "CUP_ION_Temperate": 
+            {
+                "title": "CUP ION (Temperate)",
+                "climates": ["temperate", "arctic"],
+                "dlc": ["none"]
+            },
+            "CUP_BW_Arid": 
+            {
+                "title": "CUP Bundeswehr (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "CUP_BW_Temperate": 
+            {
+                "title": "CUP Bundeswehr (Temperate)",
+                "climates": ["temperate", "arctic"],
+                "dlc": ["none"]
+            },
+            "CUP_HIL": 
+            {
+                "title": "CUP HIL",
+                "climates": ["temperate", "arctic", "tropical"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsInv":
+        {
+            "side": "Inv",
+            "CUP_AFRF_Arid":
+            {
+                "title": "CUP AFRF (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "CUP_AFRF_Temperate":
+            {
+                "title": "CUP AFRF (Temperate)",
+                "climates": ["temperate"],
+                "dlc": ["none"]
+            },
+            "CUP_AFRF_Arctic":
+            {
+                "title": "CUP AFRF (Arctic)",
+                "climates": ["arctic"],
+                "dlc": ["none"]
+            },
+            "CUP_SLA":
+            {
+                "title": "CUP SLA",
+                "climates": ["arid", "temperate"],
+                "dlc": ["none"]
+            },
+            "CUP_USAF_Arid":
+            {
+                "title": "CUP USAF (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "CUP_USAF_Temperate":
+            {
+                "title": "CUP USAF (Temperate)",
+                "climates": ["temperate", "arctic"],
+                "dlc": ["none"]
+            },
+            "CUP_USMC_Arid":
+            {
+                "title": "CUP USMC (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "CUP_USMC_Temperate":
+            {
+                "title": "CUP USMC (Temperate)",
+                "climates": ["temperate", "arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsReb":
+        {
+            "side": "Reb",
+            "CUP_TKM":
+            {
+                "title": "CUP Takistan Militia",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "CUP_Reb":
+            {
+                "title": "CUP NAPA",
+                "climates": ["temperate", "arctic", "tropical"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsRiv":
+        {
+            "side": "Riv",
+            "CUP_CHDKZ":
+            {
+                "title": "CUP CHDKZ",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsCiv": 
+        {
+            "side": "Civ",
+            "CUP_TKC":
+            {
+                "title": "CUP Takistan Civs",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "CUP_Civ":
+            {
+                "title": "CUP Civs",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "cw":
+    {
+        "title": "Clone Wars",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019570269",
+        "factionsOcc":
+        {
+            "side": "Occ",
+            "CW_REP": 
+            {
+                "title": "CW Republic",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsInv":
+        {
+            "side": "Inv",
+            "CW_CIS":
+            {
+                "title": "CW CIS",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsReb":
+        {
+            "side": "Reb",
+            "CW_MAN":
+            {
+                "title": "CW Mandalorians",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsRiv":
+        {
+            "side": "Riv",
+            "CW_RIV_DET":
+            {
+                "title": "CW Deathwatch",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "ffaa":
+    {
+        "title": "FFAA",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019563232",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "FFAA_SPA_Temperate": 
+            {
+                "title": "FFAA Spanish Army (Temperate)",
+                "climates": ["temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            },
+            "FFAA_SPA_Arid": 
+            {
+                "title": "FFAA Spanish Army (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "gm":
+    {
+        "title": "Global Mobilization",
+        "collection": "https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/wiki/Mods#global-mobilisation",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "GM_BW": 
+            {
+                "title": "GM Bundeswehr (Temperate)",
+                "climates": ["temperate", "tropical", "arctic"],
+                "dlc": ["gm"]
+            },
+            "GM_BW_Arctic": 
+            {
+                "title": "GM Bundeswehr (Arctic)",
+                "climates": ["arctic"],
+                "dlc": ["gm"]
+            }
+        },
+        "factionsInv": 
+        {
+            "side": "Inv",
+            "GM_NVA": 
+            {
+                "title": "GM Nationale Volksarmee (Temperate)",
+                "climates": ["temperate", "tropical", "arid"],
+                "dlc": ["gm"]
+            },
+            "GM_NVA_Arctic": 
+            {
+                "title": "GM Nationale Volksarmee (Arctic)",
+                "climates": ["arctic"],
+                "dlc": ["gm"]
+            }
+        },
+        "factionsReb": 
+        {
+            "side": "Reb",
+            "GM_Reb": 
+            {
+                "title": "GM FIA",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["gm"]
+            }
+        },
+        "factionsRiv": 
+        {
+            "side": "Inv",
+            "GM_VSBD": 
+            {
+                "title": "GM VSBD",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["gm"]
+            }
+        },
+        "factionsCiv": 
+        {
+            "side": "Civ",
+            "GM_Civ": 
+            {
+                "title": "GM Civs",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["gm"]
+            }
+        }
+    },
+    "ifa":
+    {
+        "title": "IFA",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=2648308937",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "IFA_WEH_Temperate": 
+            {
+                "title": "IFA Wehrmacht (Temperate)",
+                "climates": ["temperate", "tropical"],
+                "dlc": ["none"]
+            },
+            "IFA_WEH_Arid": 
+            {
+                "title": "IFA Wehrmacht (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "IFA_WEH_Arctic": 
+            {
+                "title": "IFA Wehrmacht (Arctic)",
+                "climates": ["arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsInv":
+        {
+            "side": "Inv",
+            "IFA_SOV_Temperate":
+            {
+                "title": "IFA Soviets (Temperate)",
+                "climates": ["temperate", "arid"],
+                "dlc": ["none"]
+            },
+            "IFA_SOV_Arctic":
+            {
+                "title": "IFA Soviets (Arctic)",
+                "climates": ["arctic"],
+                "dlc": ["none"]
+            },
+            "IFA_UK_Arctic":
+            {
+                "title": "IFA UK (Arctic)",
+                "climates": ["arctic"],
+                "dlc": ["none"]
+            },
+            "IFA_UK_Arid":
+            {
+                "title": "IFA UK (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "IFA_UK_Temperate":
+            {
+                "title": "IFA UK (Temperate)",
+                "climates": ["temperate"],
+                "dlc": ["none"]
+            },
+            "IFA_USA_Arctic":
+            {
+                "title": "IFA USA (Arctic)",
+                "climates": ["arctic"],
+                "dlc": ["none"]
+            },
+            "IFA_USA_Arid":
+            {
+                "title": "IFA USA (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "IFA_USA_Temperate":
+            {
+                "title": "IFA USA (Temperate)",
+                "climates": ["temperate"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsReb":
+        {
+            "side": "Reb",
+            "IFA_Reb":
+            {
+                "title": "IFA Polish",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsRiv":
+        {
+            "side": "Riv",
+            "IFA_RIV_COMU":
+            {
+                "title": "IFA Communists",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsCiv": 
+        {
+            "side": "Civ",
+            "IFA_CIV":
+            {
+                "title": "IFA Civs",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            },
+            "IFA_CIV_Arctic":
+            {
+                "title": "IFA Civs (Arctic)",
+                "climates": ["arctic"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "misc":
+    {
+        "title": "Misc Factions",
+        "collection": "If zombie related, add Webknights Zombies & Creatures",
+        "factionsCiv": 
+        {
+            "side": "Civ",
+            "Vanilla_Civ_Empty":
+            {
+                "title": "Empty",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            },
+            "Vanilla_Civ_Zombie":
+            {
+                "title": "Zombies",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "nfts":
+    {
+        "title": "NFtS",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3082226640",
+        "factionsInv":
+        {
+            "side": "Inv",
+            "NFTS_SOV_Temperate":
+            {
+                "title": "NFtS Soviets (Temperate)",
+                "climates": ["temperate"],
+                "dlc": ["none"]
+            },
+            "NFTS_SOV_Arctic":
+            {
+                "title": "NFtS Soviets (Arctic)",
+                "climates": ["arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsReb":
+        {
+            "side": "Reb",
+            "NFTS_NOR_Temperate":
+            {
+                "title": "NFtS Norway (Temperate)",
+                "climates": ["temperate"],
+                "dlc": ["none"]
+            },
+            "NFTS_NOR_Arctic":
+            {
+                "title": "NFtS Norway (Arctic)",
+                "climates": ["arctic"],
+                "dlc": ["none"]
+            },
+            "NFTS_FIN_Temperate":
+            {
+                "title": "NFtS Finland (Temperate)",
+                "climates": ["temperate"],
+                "dlc": ["none"]
+            },
+            "NFTS_FIN_Arctic":
+            {
+                "title": "NFtS Finland (Arctic)",
+                "climates": ["arctic"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "optre":
+    {
+        "title": "Operation Trebuchet",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019563643",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "OPTRE_UNSC": 
+            {
+                "title": "OPTRE UNSC",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            },
+            "OPTRE_UNSC_desert": 
+            {
+                "title": "OPTRE UNSC (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "OPTRE_UNSC_snow": 
+            {
+                "title": "OPTRE UNSC (Arctic)",
+                "climates": ["arctic"],
+                "dlc": ["none"]
+            },
+            "OPTRE_UNSC_tropical": 
+            {
+                "title": "OPTRE UNSC (Tropical)",
+                "climates": ["tropical"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsInv":
+        {
+            "side": "Inv",
+            "OPTRE_Cov":
+            {
+                "title": "OPTRE Covenant",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsReb":
+        {
+            "side": "Reb",
+            "OPTRE_Reb":
+            {
+                "title": "OPTRE Insurrectionists",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsRiv":
+        {
+            "side": "Riv",
+            "OPTRE_Riv":
+            {
+                "title": "OPTRE United Rebel Front",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsCiv": 
+        {
+            "side": "Civ",
+            "OPTRE_Civ":
+            {
+                "title": "OPTRE Civs",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "pedagne":
+    {
+        "title": "Pedagne",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019565642",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "PED_ITA_Temperate": 
+            {
+                "title": "Pedagne Italian Army (Temperate)",
+                "climates": ["temperate","tropical","arctic"],
+                "dlc": ["none"]
+            },
+            "PED_ITA_Arid": 
+            {
+                "title": "Pedagne Italian Army (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "pla":
+    {
+        "title": "PLA",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019566287",
+        "factionsInv":
+        {
+            "side": "Inv",
+            "PLA_CHI_Temperate":
+            {
+                "title": "PLA Chinese Army (Temperate)",
+                "climates": ["temperate", "tropical"],
+                "dlc": ["none"]
+            },
+            "PLA_CHI_Arid":
+            {
+                "title": "PLA Chinese Army (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "PLA_CHI_Arctic":
+            {
+                "title": "PLA Chinese Army (Arctic)",
+                "climates": ["arctic"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "racs":
+    {
+        "title": "RACS",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019567083",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "RACS_Army": 
+            {
+                "title": "RACS Army",
+                "climates": ["arid", "temperate"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsInv": 
+        {
+            "side": "Inv",
+            "RACS_SLA": 
+            {
+                "title": "RACS SLA",
+                "climates": ["arid", "temperate"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsRiv": 
+        {
+            "side": "Riv",
+            "RACS_QB": 
+            {
+                "title": "RACS QB",
+                "climates": ["arid", "temperate"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "rhs":
+    {
+        "title": "RHS",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019567905",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "RHS_USMC_Arid": 
+            {
+                "title": "RHS USMC (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "RHS_USMC_Temperate": 
+            {
+                "title": "RHS USMC (Temperate)",
+                "climates": ["temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            },
+            "RHS_US_Army_Arid": 
+            {
+                "title": "RHS US Army (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "RHS_US_Army_Temperate": 
+            {
+                "title": "RHS US Army (Temperate)",
+                "climates": ["temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            },
+            "RHS_CDF": 
+            {
+                "title": "RHS CDF",
+                "climates": ["temperate", "arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsInv":
+        {
+            "side": "Inv",
+            "RHS_AFRF":
+            {
+                "title": "RHS AFRF",
+                "climates": ["arid", "tropical", "temperate", "arctic"],
+                "dlc": ["none"]
+            },
+            "RHS_SAF":
+            {
+                "title": "RHS SAF",
+                "climates": ["arid", "tropical", "temperate", "arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsReb":
+        {
+            "side": "Reb",
+            "RHS_NAPA":
+            {
+                "title": "RHS NAPA",
+                "climates": ["arid", "tropical", "temperate", "arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsRiv":
+        {
+            "side": "Riv",
+            "RHS_CHDKZ":
+            {
+                "title": "RHS CHDKZ",
+                "climates": ["arid", "tropical", "temperate", "arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsCiv": 
+        {
+            "side": "Civ",
+            "RHS_Civ":
+            {
+                "title": "RHS Eastern Europeans",
+                "climates": ["arid", "tropical", "temperate", "arctic"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "spe_ifa":
+    {
+        "title": "Spearhead 1944 + IFA",
+        "collection": "https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/wiki/Mods#spearhead-1944",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "SPE_IFA_WEH": 
+            {
+                "title": "Spearhead + IFA Wehrmacht",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["spe"]
+            }
+        },
+        "factionsInv":
+        {
+            "side": "Inv",
+            "SPE_IFA_US":
+            {
+                "title": "Spearhead + IFA USA",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["spe"]
+            }
+        },
+        "factionsReb":
+        {
+            "side": "Reb",
+            "SPE_IFA_Reb":
+            {
+                "title": "Spearhead + IFA French FF",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["spe"]
+            }
+        },
+        "factionsCiv": 
+        {
+            "side": "Civ",
+            "SPE_IFA_CIV":
+            {
+                "title": "Spearhead + IFA Civs",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["spe"]
+            }
+        }
+    },
+    "stalker":
+    {
+        "title": "STALKER",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3033192423",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "STALKER_Military": 
+            {
+                "title": "STALKER Military",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            },
+            "STALKER_ClearSky": 
+            {
+                "title": "STALKER Clear Sky",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsInv":
+        {
+            "side": "Inv",
+            "STALKER_Monolith":
+            {
+                "title": "STALKER Monolith",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            },
+            "STALKER_Freedom":
+            {
+                "title": "STALKER Freedom",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsReb":
+        {
+            "side": "Reb",
+            "STALKER_Loners":
+            {
+                "title": "STALKER Loners",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            },
+            "STALKER_Ecologists":
+            {
+                "title": "STALKER Ecologists",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsRiv":
+        {
+            "side": "Riv",
+            "STALKER_Duty":
+            {
+                "title": "STALKER Duty",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            },
+            "STALKER_Bandits":
+            {
+                "title": "STALKER Bandits",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsCiv": 
+        {
+            "side": "Civ",
+            "STALKER_Civ_Zombie":
+            {
+                "title": "STALKER Mutants",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "swe":
+    {
+        "title": "SFP",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019568578",
+        "factionsOcc":
+        {
+            "side": "Occ",
+            "SFP_SWE_Temperate": 
+            {
+                "title": "SFP Swedish (Temperate)",
+                "climates": ["temperate", "tropical"],
+                "dlc": ["none"]
+            },
+            "SFP_SWE_Arid": 
+            {
+                "title": "SFP Swedish (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "SFP_SWE_Arctic": 
+            {
+                "title": "SFP Swedish (Arctic)",
+                "climates": ["arctic"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "tmt":
+    {
+        "title": "TMT",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019568578",
+        "factionsOcc":
+        {
+            "side": "Occ",
+            "TMT_Army": 
+            {
+                "title": "TMT Turkish Land Forces",
+                "climates": ["arid", "temperate", "arctic"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "tfc":
+    {
+        "title": "TFC",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3063926843",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "TFC_Army": 
+            {
+                "title": "TFC Canadian Army (Temperate)",
+                "climates": ["temperate", "arctic"],
+                "dlc": ["none"]
+            },
+            "TFC_Army_Arid": 
+            {
+                "title": "TFC Canadian Army (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "uns":
+    {
+        "title": "Unsung",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=943001311",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "UNS_PAVN": 
+            {
+                "title": "Unsung PAVN",
+                "climates": ["tropical", "temperate"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsInv":
+        {
+            "side": "Inv",
+            "UNS_US":
+            {
+                "title": "Unsung US",
+                "climates": ["tropical", "temperate"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsReb":
+        {
+            "side": "Reb",
+            "UNS_VC":
+            {
+                "title": "Unsung VC",
+                "climates": ["tropical", "temperate"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsRiv":
+        {
+            "side": "Riv",
+            "UNS_RIV_SVR":
+            {
+                "title": "Unsung SV Resistance",
+                "climates": ["tropical", "temperate"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsCiv": 
+        {
+            "side": "Civ",
+            "UNS_Civ":
+            {
+                "title": "Unsung Civs",
+                "climates": ["tropical", "temperate"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "vanilla":
+    {
+        "title": "Vanilla",
+        "collection": "Vanilla Content",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "Vanilla_NATO_Arid": 
+            {
+                "title": "NATO (Arid)",
+                "climates": ["arid"],
+                "dlc": ["vanilla"]
+            },
+            "Vanilla_NATO_Temperate": 
+            {
+                "title": "NATO (Temperate)",
+                "climates": ["temperate", "arctic"],
+                "dlc": ["vanilla"]
+            },
+            "Vanilla_NATO_Tropical": 
+            {
+                "title": "NATO (Tropical)",
+                "climates": ["tropical"],
+                "dlc": ["vanilla", "apex"]
+            },
+            "Vanilla_LDF": 
+            {
+                "title": "Livonian Defense Force",
+                "climates": ["temperate"],
+                "dlc": ["vanilla", "contact"]
+            },
+            "Vanilla_AAF": 
+            {
+                "title": "Altis Armed Forces",
+                "climates": ["arid"],
+                "dlc": ["vanilla"]
+            }
+        },
+        "factionsInv":
+        {
+            "side": "Inv",
+            "Vanilla_CSAT_Arid":
+            {
+                "title": "CSAT (Arid)",
+                "climates": ["arid", "arctic"],
+                "dlc": ["vanilla"]
+            },
+            "Vanilla_CSAT_Temperate":
+            {
+                "title": "CSAT (Temperate)",
+                "climates": ["temperate", "tropical"],
+                "dlc": ["vanilla"]
+            }
+        },
+        "factionsReb":
+        {
+            "side": "Reb",
+            "Vanilla_FIA":
+            {
+                "title": "FIA",
+                "climates": ["arid"],
+                "dlc": ["vanilla"]
+            },
+            "Vanilla_SDK":
+            {
+                "title": "Syndikat",
+                "climates": ["tropical"],
+                "dlc": ["vanilla", "apex"]
+            },
+            "Vanilla_LL":
+            {
+                "title": "Livonian Looters",
+                "climates": ["temperate", "arctic"],
+                "dlc": ["vanilla", "contact"]
+            }
+        },
+        "factionsRiv":
+        {
+            "side": "Riv",
+            "Vanilla_Exegermenos":
+            {
+                "title": "Exegermenos",
+                "climates": ["arid", "temperate", "arctic"],
+                "dlc": ["vanilla"]
+            },
+            "Vanilla_LE":
+            {
+                "title": "L'Ensemble",
+                "climates": ["tropical"],
+                "dlc": ["vanilla", "apex"]
+            }
+        },
+        "factionsCiv": 
+        {
+            "side": "Civ",
+            "Vanilla_Civ":
+            {
+                "title": "The People Of Altis",
+                "climates": ["arid", "tropical", "temperate", "arctic"],
+                "dlc": ["vanilla", "none"]
+            }
+        }
+    },
+    "vn":
+    {
+        "title": "SOGPF",
+        "collection": "https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/wiki/Mods#sog-prairie-fire",
+        "factionsOcc":
+        {
+            "side": "Occ",
+            "VN_MACV": 
+            {
+                "title": "SOGPF MACV",
+                "climates": ["tropical", "temperate"],
+                "dlc": ["vn"]
+            }
+        },
+        "factionsInv":
+        {
+            "side": "Inv",
+            "VN_ARVN":
+            {
+                "title": "SOGPF ARVN",
+                "climates": ["tropical", "temperate"],
+                "dlc": ["vn"]
+            },
+            "VN_PAVN":
+            {
+                "title": "SOGPF PAVN",
+                "climates": ["tropical", "temperate"],
+                "dlc": ["vn"]
+            }
+        },
+        "factionsReb":
+        {
+            "side": "Reb",
+            "VN_VM":
+            {
+                "title": "SOGPF VM",
+                "climates": ["tropical", "temperate"],
+                "dlc": ["vn"]
+            },
+            "VN_VC":
+            {
+                "title": "SOGPF VC",
+                "climates": ["tropical", "temperate"],
+                "dlc": ["vn"]
+            }
+        },
+        "factionsRiv":
+        {
+            "side": "Riv",
+            "VN_Riv_PL":
+            {
+                "title": "SOGPF PL",
+                "climates": ["tropical", "temperate"],
+                "dlc": ["vn"]
+            }
+        },
+        "factionsCiv": 
+        {
+            "side": "Civ",
+            "VN_Civ":
+            {
+                "title": "SOGPF Civs",
+                "climates": ["tropical", "temperate"],
+                "dlc": ["vn"]
+            }
+        }
+    },
+    "ws":
+    {
+        "title": "Western Sahara",
+        "collection": "https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/wiki/Mods#western-sahara",
+        "factionsReb":
+        {
+            "side": "Reb",
+            "WS_Tura":
+            {
+                "title": "WS Tura",
+                "climates": ["arid"],
+                "dlc": ["ws"]
+            }
+        },
+        "factionsRiv":
+        {
+            "side": "Riv",
+            "WS_Exegermenos":
+            {
+                "title": "WS Exegermenos",
+                "climates": ["arid"],
+                "dlc": ["ws"]
+            }
+        },
+        "factionsCiv": 
+        {
+            "side": "Civ",
+            "WS_Civ":
+            {
+                "title": "WS Civs",
+                "climates": ["arid"],
+                "dlc": ["ws"]
+            }
+        }
+    }
+}

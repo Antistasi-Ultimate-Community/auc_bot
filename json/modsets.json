@@ -1,0 +1,918 @@
+{
+    "modsets": 
+    [
+        "3cbbaf", 
+        "3cbf", 
+        "aegis", 
+        "amf", 
+        "braf", 
+        "bwa3rhs", 
+        "bwa3cup", 
+        "csa38", 
+        "cup", 
+        "cw", 
+        "ffaa", 
+        "gm", 
+        "ifa", 
+        "nfts",
+        "optre",
+        "pedagne",
+        "pla",
+        "racs", 
+        "rhs", 
+        "spe_ifa",
+        "swe",
+        "tfc",
+        "uns",
+        "vanilla",
+        "vn",
+        "ws"
+    ],
+    "3cbbaf": 
+    {
+        "title": "3CBBAF",
+        "type": "rhs",
+        "era": "modern",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019552209",
+        "factionsOcc": 
+        [
+            "3CB_AI_BAF_Arctic", 
+            "3CB_AI_BAF_Arid", 
+            "3CB_AI_BAF_Temperate", 
+            "3CB_AI_BAF_Tropical"
+        ],
+        "factionsInv": 
+        [
+            "None"
+        ],
+        "factionsReb": 
+        [
+            "None"
+        ],
+        "factionsRiv": 
+        [
+            "None"
+        ],
+        "factionsCiv": 
+        [
+            "None"
+        ]
+    },
+    "3cbf": 
+    {
+        "title": "3CBF",
+        "type": "rhs",
+        "era": "modern",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019553097",
+        "factionsOcc": 
+        [
+            "3CBF_LDF", 
+            "3CBF_CDF", 
+            "3CBF_HIDF", 
+            "3CBF_AAF", "3CBF_TKA", 
+            "3CBF_US_Army_Arid", 
+            "3CBF_US_Army_Temperate", 
+            "3CBF_USMC_Arid", 
+            "3CBF_USMC_Temperate"
+        ],
+        "factionsInv": 
+        [
+            "3CBF_ARD", 
+            "3CBF_AFRF"
+        ],
+        "factionsReb": 
+        [
+            "3CBF_FIA", 
+            "3CBF_NAPA", 
+            "3CBF_CCM", 
+            "3CBF_TKM"
+        ],
+        "factionsRiv": 
+        [
+            "3CBF_CHDKZ", 
+            "3CBF_TI"
+        ],
+        "factionsCiv": 
+        [
+            "3CBF_CHC", 
+            "3CBF_A", 
+            "3CBF_TKC"
+        ]
+    },
+    "aegis": 
+    {
+        "title": "Aegis",
+        "type": "vanilla",
+        "era": "modern",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3029745748",
+        "factionsOcc": 
+        [
+            "Aegis_AUKUS_Arid",
+            "Aegis_AUKUS_Temperate",
+            "Aegis_AUKUS_Tropical",
+            "Aegis_AAF",
+            "Aegis_NATO_Arid",
+            "Aegis_NATO_Temperate",
+            "Aegis_NATO_Tropical"
+        ],
+        "factionsInv": 
+        [
+            "Aegis_AFRF_Arid",
+            "Aegis_AFRF_Temperate", 
+            "Aegis_CSAT_Arid", 
+            "Aegis_CSAT_Temperate"
+        ],
+        "factionsReb": 
+        [
+            "Aegis_FIA",
+            "Aegis_SDK",
+            "Aegis_LM"
+        ],
+        "factionsRiv": 
+        [
+            "Aegis_CHDKZ",
+            "Aegis_Ion"
+        ],
+        "factionsCiv": 
+        [
+            "Aegis_Civ"
+        ]
+    },
+    "amf": 
+    {
+        "title": "AMF",
+        "type": "vanilla",
+        "era": "modern",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "AMF_Army",
+            "AMF_Army_Tan"
+        ],
+        "factionsInv": 
+        [
+            "None"
+        ],
+        "factionsReb": 
+        [
+            "None"
+        ],
+        "factionsRiv": 
+        [
+            "None"
+        ],
+        "factionsCiv": 
+        [
+            "None"
+        ]
+    },
+    "braf": 
+    {
+        "title": "BRAF",
+        "type": "vanilla",
+        "era": "modern",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "BRAF_Tropical"
+        ],
+        "factionsInv": 
+        [
+            "None"
+        ],
+        "factionsReb": 
+        [
+            "BRAF_MNGC"
+        ],
+        "factionsRiv": 
+        [
+            "None"
+        ],
+        "factionsCiv": 
+        [
+            "None"
+        ]
+    },
+    "bwa3rhs": 
+    {
+        "title": "BWA RHS",
+        "type": "rhs",
+        "era": "modern",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "BWA3_BW_Arid",
+            "BWA3_BW_Temperate"
+        ],
+        "factionsInv": 
+        [
+            "None"
+        ],
+        "factionsReb": 
+        [
+            "None"
+        ],
+        "factionsRiv": 
+        [
+            "None"
+        ],
+        "factionsCiv": 
+        [
+            "None"
+        ]
+    },
+    "bwa3cup": 
+    {
+        "title": "BWA CUP",
+        "type": "vanilla",
+        "era": "modern",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "BWA3_BW_Arid",
+            "BWA3_BW_Temperate"
+        ],
+        "factionsInv": 
+        [
+            "None"
+        ],
+        "factionsReb": 
+        [
+            "None"
+        ],
+        "factionsRiv": 
+        [
+            "None"
+        ],
+        "factionsCiv": 
+        [
+            "None"
+        ]
+    },
+    "csa38": 
+    {
+        "title": "CSA38",
+        "type": "vanilla",
+        "era": "lowtech",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "CSA_WEH_Temperate",
+            "CSA_WEH_Arid",
+            "CSA_WEH_Arctic"
+        ],
+        "factionsInv": 
+        [
+            "CSA_UK_Arctic",
+            "CSA_UK_Arid",
+            "CSA_UK_Temperate"
+        ],
+        "factionsReb": 
+        [
+            "CSA_Reb"
+        ],
+        "factionsRiv": 
+        [
+            "None"
+        ],
+        "factionsCiv": 
+        [
+            "None"
+        ]
+    },
+    "cup": 
+    {
+        "title": "CUP",
+        "type": "vanilla",
+        "era": "modern",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "CUP_ACR_Arid",
+            "CUP_ACR_Temperate",
+            "CUP_BAF_Arid",
+            "CUP_BAF_Temperate",
+            "CUP_CDF_Arctic",
+            "CUP_CDF_Temperate",
+            "CUP_RACS_Arid",
+            "CUP_RACS_Tropical",
+            "CUP_TKA",
+            "CUP_ION_Arid",
+            "CUP_ION_Temperate",
+            "CUP_BW_Arid",
+            "CUP_BW_Temperate",
+            "CUP_HIL"
+        ],
+        "factionsInv": 
+        [
+            "CUP_AFRF_Arid",
+            "CUP_AFRF_Temperate",
+            "CUP_AFRF_Arctic",
+            "CUP_SLA",
+            "CUP_USAF_Arid",
+            "CUP_USAF_Temperate",
+            "CUP_USMC_Arid",
+            "CUP_USMC_Temperate"
+        ],
+        "factionsReb": 
+        [
+            "CUP_TKM",
+            "CUP_Reb"
+        ],
+        "factionsRiv": 
+        [
+            "CUP_CHDKZ"
+        ],
+        "factionsCiv": 
+        [
+            "CUP_TKC",
+            "CUP_Civ"
+        ]
+    },
+    "cw": 
+    {
+        "title": "Clone Wars",
+        "type": "vanilla",
+        "era": "scifi",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "CW_REP"
+        ],
+        "factionsInv": 
+        [
+            "CW_CIS"
+        ],
+        "factionsReb": 
+        [
+            "CW_MAN"
+        ],
+        "factionsRiv": 
+        [
+            "CW_RIV_DET"
+        ],
+        "factionsCiv": 
+        [
+            "None"
+        ]
+    },
+    "ffaa": 
+    {
+        "title": "FFAA",
+        "type": "vanilla",
+        "era": "modern",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "FFAA_SPA_Temperate",
+            "FFAA_SPA_Arid"
+        ],
+        "factionsInv": 
+        [
+            "None"
+        ],
+        "factionsReb": 
+        [
+            "None"
+        ],
+        "factionsRiv": 
+        [
+            "None"
+        ],
+        "factionsCiv": 
+        [
+            "None"
+        ]
+    },
+    "gm": 
+    {
+        "title": "GM",
+        "type": "vanilla",
+        "era": "coldwar",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "GM_BW",
+            "GM_BW_Arctic"
+        ],
+        "factionsInv": 
+        [
+            "GM_NVA",
+            "GM_NVA_Arctic"
+        ],
+        "factionsReb": 
+        [
+            "GM_Reb"
+        ],
+        "factionsRiv": 
+        [
+            "GM_VSBD"
+        ],
+        "factionsCiv": 
+        [
+            "GM_Civ"
+        ]
+    },
+    "ifa": 
+    {
+        "title": "IFA",
+        "type": "vanilla",
+        "era": "lowtech",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "IFA_WEH_Temperate",
+            "IFA_WEH_Arid",
+            "IFA_WEH_Arctic"
+        ],
+        "factionsInv": 
+        [
+            "IFA_SOV_Temperate",
+            "IFA_SOV_Arctic",
+            "IFA_UK_Arctic",
+            "IFA_UK_Arid",
+            "IFA_UK_Temperate",
+            "IFA_USA_Arctic",
+            "IFA_USA_Arid",
+            "IFA_USA_Temperate"
+        ],
+        "factionsReb": 
+        [
+            "IFA_Reb"
+        ],
+        "factionsRiv": 
+        [
+            "IFA_RIV_COMU"
+        ],
+        "factionsCiv": 
+        [
+            "IFA_CIV",
+            "IFA_CIV_Arctic"
+        ]
+    },
+    "misc": 
+    {
+        "title": "Misc",
+        "type": "vanilla",
+        "era": "modern",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "None"
+        ],
+        "factionsInv": 
+        [
+            "None"
+        ],
+        "factionsReb": 
+        [
+            "None"
+        ],
+        "factionsRiv": 
+        [
+            "None"
+        ],
+        "factionsCiv": 
+        [
+            "Vanilla_Civ_Empty",
+            "Vanilla_Civ_Zombie"
+        ]
+    },
+    "nfts": 
+    {
+        "title": "NFTS",
+        "type": "vanilla",
+        "era": "lowtech",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "None"
+        ],
+        "factionsInv": 
+        [
+            "NFTS_SOV_Temperate",
+            "NFTS_SOV_Arctic"
+        ],
+        "factionsReb": 
+        [
+            "NFTS_NOR_Temperate",
+            "NFTS_NOR_Arctic",
+            "NFTS_FIN_Temperate",
+            "NFTS_FIN_Arctic"
+        ],
+        "factionsRiv": 
+        [
+            "None"
+        ],
+        "factionsCiv": 
+        [
+            "None"
+        ]
+    },
+    "optre": 
+    {
+        "title": "OPTRE",
+        "type": "vanilla",
+        "era": "scifi",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "OPTRE_UNSC",
+            "OPTRE_UNSC_desert",
+            "OPTRE_UNSC_snow",
+            "OPTRE_UNSC_tropical"
+        ],
+        "factionsInv": 
+        [
+            "OPTRE_Cov"
+        ],
+        "factionsReb": 
+        [
+            "OPTRE_Reb"
+        ],
+        "factionsRiv": 
+        [
+            "OPTRE_Riv"
+        ],
+        "factionsCiv": 
+        [
+            "OPTRE_Civ"
+        ]
+    },
+    "pedagne": 
+    {
+        "title": "Pedagne",
+        "type": "vanilla",
+        "era": "modern",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "PED_ITA_Temperate",
+            "PED_ITA_Arid"
+        ],
+        "factionsInv": 
+        [
+            "None"
+        ],
+        "factionsReb": 
+        [
+            "None"
+        ],
+        "factionsRiv": 
+        [
+            "None"
+        ],
+        "factionsCiv": 
+        [
+            "None"
+        ]
+    },
+    "pla": 
+    {
+        "title": "PLA",
+        "type": "vanilla",
+        "era": "modern",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "None"
+        ],
+        "factionsInv": 
+        [
+            "PLA_CHI_Temperate",
+            "PLA_CHI_Arid",
+            "PLA_CHI_Arctic"
+        ],
+        "factionsReb": 
+        [
+            "None"
+        ],
+        "factionsRiv": 
+        [
+            "None"
+        ],
+        "factionsCiv": 
+        [
+            "None"
+        ]
+    },
+    "racs": 
+    {
+        "title": "RACS",
+        "type": "rhs",
+        "era": "modern",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "RACS_Army"
+        ],
+        "factionsInv": 
+        [
+            "RACS_SLA"
+        ],
+        "factionsReb": 
+        [
+            "None"
+        ],
+        "factionsRiv": 
+        [
+            "RACS_QB"
+        ],
+        "factionsCiv": 
+        [
+            "None"
+        ]
+    },
+    "rhs":
+    {
+        "title": "RHS",
+        "type": "rhs",
+        "era": "modern",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "RHS_USMC_Arid", 
+            "RHS_USMC_Temperate", 
+            "RHS_US_Army_Arid", 
+            "RHS_US_Army_Temperate", 
+            "RHS_CDF"
+        ],
+        "factionsInv": 
+        [
+            "RHS_AFRF", 
+            "RHS_SAF"
+        ],
+        "factionsReb": 
+        [
+            "RHS_NAPA"
+        ],
+        "factionsRiv": 
+        [
+            "RHS_CHDKZ"
+        ],
+        "factionsCiv": 
+        [
+            "RHS_Civ"
+        ]
+    },
+    "spe_ifa": 
+    {
+        "title": "SPE + IFA",
+        "type": "vanilla",
+        "era": "lowtech",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "SPE_IFA_WEH"
+        ],
+        "factionsInv": 
+        [
+            "SPE_IFA_US"
+        ],
+        "factionsReb": 
+        [
+            "SPE_IFA_Reb"
+        ],
+        "factionsRiv": 
+        [
+            "None"
+        ],
+        "factionsCiv": 
+        [
+            "SPE_IFA_CIV"
+        ]
+    },
+    "stalker": 
+    {
+        "title": "STALKER",
+        "type": "vanilla",
+        "era": "modern",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "STALKER_Military",
+            "STALKER_ClearSky"
+        ],
+        "factionsInv": 
+        [
+            "STALKER_Monolith",
+            "STALKER_Freedom"
+        ],
+        "factionsReb": 
+        [
+            "STALKER_Loners",
+            "STALKER_Ecologists"
+        ],
+        "factionsRiv": 
+        [
+            "STALKER_Duty",
+            "STALKER_Bandits"
+        ],
+        "factionsCiv": 
+        [
+            "STALKER_Civ_Zombie"
+        ]
+    },
+    "swe": 
+    {
+        "title": "SFP",
+        "type": "vanilla",
+        "era": "modern",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "SFP_SWE_Temperate",
+            "SFP_SWE_Arid",
+            "SFP_SWE_Arctic"
+        ],
+        "factionsInv": 
+        [
+            "None"
+        ],
+        "factionsReb": 
+        [
+            "None"
+        ],
+        "factionsRiv": 
+        [
+            "None"
+        ],
+        "factionsCiv": 
+        [
+            "None"
+        ]
+    },
+    "tmt": 
+    {
+        "title": "TMT",
+        "type": "vanilla",
+        "era": "modern",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "TMT_Army"
+        ],
+        "factionsInv": 
+        [
+            "None"
+        ],
+        "factionsReb": 
+        [
+            "None"
+        ],
+        "factionsRiv": 
+        [
+            "None"
+        ],
+        "factionsCiv": 
+        [
+            "None"
+        ]
+    },
+    "tfc": 
+    {
+        "title": "TFC",
+        "type": "rhs",
+        "era": "modern",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "TFC_Army", 
+            "TFC_Army_Arid"
+        ],
+        "factionsInv": 
+        [
+            "None"
+        ],
+        "factionsReb": 
+        [
+            "None"
+        ],
+        "factionsRiv": 
+        [
+            "None"
+        ],
+        "factionsCiv": 
+        [
+            "None"
+        ]
+    },
+    "uns": 
+    {
+        "title": "Unsung",
+        "type": "vanilla",
+        "era": "coldwar",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "UNS_PAVN"
+        ],
+        "factionsInv": 
+        [
+            "UNS_US"
+        ],
+        "factionsReb": 
+        [
+            "UNS_VC"
+        ],
+        "factionsRiv": 
+        [
+            "UNS_RIV_SVR"
+        ],
+        "factionsCiv": 
+        [
+            "UNS_Civ"
+        ]
+    },
+    "vanilla": 
+    {
+        "title": "Vanilla",
+        "type": "vanilla",
+        "era": "modern",
+        "collection": "",
+        "factionsOcc": 
+        [
+            "Vanilla_NATO_Arid", 
+            "Vanilla_NATO_Temperate", 
+            "Vanilla_NATO_Tropical", 
+            "Vanilla_LDF", 
+            "Vanilla_AAF"
+        ],
+        "factionsInv": 
+        [
+            "Vanilla_CSAT_Arid", 
+            "Vanilla_CSAT_Temperate"
+        ],
+        "factionsReb": 
+        [
+            "Vanilla_FIA", 
+            "Vanilla_SDK", 
+            "Vanilla_LL"
+        ],
+        "factionsRiv": 
+        [
+            "Vanilla_Exegermenos", 
+            "Vanilla_LE"
+        ],
+        "factionsCiv": 
+        [
+            "Vanilla_Civ"
+        ]
+    },
+    "vn": 
+    {
+        "title": "SOGPF",
+        "type": "vanilla",
+        "era": "coldwar",
+        "collection": "https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/",
+        "factionsOcc": 
+        [
+            "VN_MACV"
+        ],
+        "factionsInv": 
+        [
+            "VN_ARVN",
+            "VN_PAVN"
+        ],
+        "factionsReb": 
+        [
+            "VN_VM",
+            "VN_VC"
+        ],
+        "factionsRiv": 
+        [
+            "VN_Riv_PL"
+        ],
+        "factionsCiv": 
+        [
+            "VN_Civ"
+        ]
+    },
+    "ws": 
+    {
+        "title": "Western Sahara",
+        "type": "vanilla",
+        "era": "modern",
+        "collection": "https://store.steampowered.com/app/1681170/Arma_3_Creator_DLC_Western_Sahara/",
+        "factionsOcc": 
+        [
+            "None"
+        ],
+        "factionsInv": 
+        [
+            "None"
+        ],
+        "factionsReb": 
+        [
+            "WS_Tura"
+        ],
+        "factionsRiv": 
+        [
+            "WS_Exegermenos"
+        ],
+        "factionsCiv": 
+        [
+            "WS_Civ"
+        ]
+    }
+}
