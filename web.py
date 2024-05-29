@@ -19,27 +19,32 @@ def format_embed(interaction, title=None, description=None, type="rich", colour=
     embed_message.set_footer(text=guild_log_copyright)
     return embed_message
 
-def send_changelog(interaction, mod_type="main", changelog={"version": "10.0.0", "url": "Test"}):
+def send_changelog(interaction, mod_type="main", changelog={"version": "10.0.0", "changelog": ["Test", "URL"]}):
     log_message(-1, f"{interaction.user.name} ({interaction.user.id}) is sending a changelog embed.", space=True)
     log_message(-1, f"Mod Type: {mod_type}")
     log_message(-1, f"Changelog Version/URL: {changelog}")
 
     if (mod_type == "Public Testing"):
         colour = 16711680 #red
-        target = "Antistasi Ultimate - Public Testing\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=3169463443"
+        target = "Antistasi Ultimate - Public Testing"
+        target_url = "https://steamcommunity.com/sharedfiles/filedetails/?id=3169463443"
         thumbnail = "https://antistasiultimate.com/images/yellow_dev.png"
     else:
         colour = 15844367 #gold
-        target = "Antistasi Ultimate - Mod\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=3020755032"
+        target = "Antistasi Ultimate - Mod"
+        target_url = "https://steamcommunity.com/sharedfiles/filedetails/?id=3020755032"
         thumbnail = "https://antistasiultimate.com/images/Yellow.png"
 
     embed_message = format_embed(interaction=interaction, title="Antistasi Ultimate Update", colour=colour, thumbnail=thumbnail)
+    embed_message_changelog = format_embed(interaction=interaction, title="Antistasi Ultimate Changelog", colour=colour, thumbnail=thumbnail)
     
     changelog_version = changelog["version"]
-    changelog_url = changelog["url"]
+    changelog = changelog["changelog"]
 
-    embed_message.add_field(name=f"Target: {target}\n\nVersion: v{changelog_version}", value=f"[Changelog]({changelog_url})\n\nTo avoid issues, please repair the mod in your launcher.\nIf applicable, reinstall the mod to your server (Completely delete the mod first).")
-    return interaction.response.send_message(embed=embed_message)
+    embed_message_changelog.add_field(name=f"Version: v{changelog_version}", value=f"```{changelog[0]}```\n[Full Changelog]({changelog[1]})")
+    embed_message.add_field(name=f"Target: {target}\nVersion: v{changelog_version}", value=f"[Mod Link]({target_url})\n[Changelog Link]({changelog[1]})\n\nSee the changelog below.\n\nTo avoid issues, please repair the mod in your launcher.\nIf applicable, reinstall the mod to your server (Completely delete the mod first).")
+
+    return interaction.response.send_message(embeds=[embed_message, embed_message_changelog])
 
 def send_message(interaction, message, local=False):    
     try:

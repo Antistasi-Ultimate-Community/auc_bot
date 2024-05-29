@@ -18,6 +18,9 @@ from log import log_message
 
 from commands import commands_init
 
+if not os.path.exists("logs"):
+    os.makedirs("logs")
+
 handler = logging.FileHandler(filename=guild_log_file, encoding='utf-8', mode='w')
 
 intents = discord.Intents.default()
@@ -43,6 +46,6 @@ class aclient(discord.Client):
 client = aclient()
 tree = commands_init(client)
 
-client.run(token, log_handler=handler)
+# client.run(token, log_handler=handler)
 
 os.system("cls")

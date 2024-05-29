@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 from discord import app_commands
+from discord import ui
 
 from config import guild_id
 from config import guild_roles_moderator
@@ -27,6 +28,19 @@ from web import return_url
 from web import send_url
 
 import time
+
+class changelog_modal(ui.Modal):
+    def __init__(self, mod_type):
+        self.mod_type = mod_type
+        super().__init__(title='Changelog Form')
+
+    version_textinput = ui.TextInput(label="Version", default="10.0.0")
+    changelog_url_textinput = ui.TextInput(label="Changelog URL", default="https://antistasiultimate.com")
+    changelog_textinput = ui.TextInput(label="Changelog", style=discord.TextStyle.paragraph, default="This is a changelog!", max_length=800)
+
+    async def on_submit(self, interaction: discord.Interaction):
+        embed = send_changelog(interaction=interaction, changelog={"version": self.version_textinput, "changelog": [self.changelog_textinput, self.changelog_url_textinput]}, mod_type=self.mod_type)
+        await embed
 
 def handle_utility_message(message):
     log_message(-1, message)
@@ -63,11 +77,10 @@ def commands_init(client):
         embed = format_embed(interaction=interaction, title=title, description=description, colour=colour, thumbnail=thumbnail)
         await interaction.response.send_message(embed=embed)
             
-    @tree.command(name="changelog", description="Creates a changelog using an embed.", guild=guild_id)
+    @tree.command(name="changelog", description="Creates a changelog form using an embed.", guild=guild_id)
     @app_commands.check(is_admin)
-    async def changelog(interaction: discord.Interaction, version: str, changelog_url: str, mod_type: Literal["Main", "Public Testing"]):
-        embed = send_changelog(interaction=interaction, changelog={"version": version, "url": changelog_url}, mod_type=mod_type)
-        await embed
+    async def changelog(interaction: discord.Interaction, mod_type: Literal["Main", "Public Testing"]):
+        await interaction.response.send_modal(changelog_modal(mod_type))
 
     @tree.command(name="shutdown", description="Shuts down the bot.", guild=guild_id)
     @app_commands.check(is_admin)

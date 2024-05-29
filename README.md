@@ -2,15 +2,15 @@
 A discord bot made in discord.py for the Antistasi Ultimate Community.
 
 # FIRST TIME SETUP:
-`python3 -m pip install -U discord.py`
+Run [install].bat
 or
-`py -3 -m pip install -U discord.py`
+`pip install discord.py requests`
 
 ### Manual Requirements:
-Create a `bot_token.py` file and inside it add these 2 variables:
+Create a python file called `bot_token.py` in the root folder and inside it add these 2 variables:
 ```py
-bot_token = BOT_TOKEN # Replace with the bot token, as string
-debug = False
+token = BOT_TOKEN # Replace with the bot token, as string
+debug = False # Debug will run this on the specified "guild" (discord server) that is set in config.py. This means that slash commands and such will only sync with that "guild". Right now it's set to my testing server
 ```
 
 # Features:
