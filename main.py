@@ -46,6 +46,6 @@ class aclient(discord.Client):
 client = aclient()
 tree = commands_init(client)
 
-# client.run(token, log_handler=handler)
+client.run(token, log_handler=handler)
 
 os.system("cls")
