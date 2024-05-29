@@ -104,7 +104,7 @@
         "title": "Aegis",
         "type": "vanilla",
         "era": "modern",
-        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3029745748",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3029745748 (CHECK THE AEGIS PAGE FOR DLC)",
         "factionsOcc": 
         [
             "Aegis_AUKUS_Arid",
@@ -143,7 +143,7 @@
         "title": "AMF",
         "type": "vanilla",
         "era": "modern",
-        "collection": "",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3055728379",
         "factionsOcc": 
         [
             "AMF_Army",
@@ -171,7 +171,7 @@
         "title": "BRAF",
         "type": "vanilla",
         "era": "modern",
-        "collection": "",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3034666054",
         "factionsOcc": 
         [
             "BRAF_Tropical"
@@ -198,7 +198,7 @@
         "title": "BWA RHS",
         "type": "rhs",
         "era": "modern",
-        "collection": "",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019561262",
         "factionsOcc": 
         [
             "BWA3_BW_Arid",
@@ -226,7 +226,7 @@
         "title": "BWA CUP",
         "type": "vanilla",
         "era": "modern",
-        "collection": "",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019562271",
         "factionsOcc": 
         [
             "BWA3_BW_Arid",
@@ -254,7 +254,7 @@
         "title": "CSA38",
         "type": "vanilla",
         "era": "lowtech",
-        "collection": "",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3034665416",
         "factionsOcc": 
         [
             "CSA_WEH_Temperate",
@@ -285,7 +285,7 @@
         "title": "CUP",
         "type": "vanilla",
         "era": "modern",
-        "collection": "",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019562847",
         "factionsOcc": 
         [
             "CUP_ACR_Arid",
@@ -334,7 +334,7 @@
         "title": "Clone Wars",
         "type": "vanilla",
         "era": "scifi",
-        "collection": "",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019570269",
         "factionsOcc": 
         [
             "CW_REP"
@@ -361,7 +361,7 @@
         "title": "FFAA",
         "type": "vanilla",
         "era": "modern",
-        "collection": "",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019563232",
         "factionsOcc": 
         [
             "FFAA_SPA_Temperate",
@@ -389,7 +389,7 @@
         "title": "GM",
         "type": "vanilla",
         "era": "coldwar",
-        "collection": "",
+        "collection": "https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/ + https://steamcommunity.com/sharedfiles/filedetails/?id=3034735195",
         "factionsOcc": 
         [
             "GM_BW",
@@ -418,7 +418,7 @@
         "title": "IFA",
         "type": "vanilla",
         "era": "lowtech",
-        "collection": "",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=2648308937",
         "factionsOcc": 
         [
             "IFA_WEH_Temperate",
@@ -455,7 +455,7 @@
         "title": "Misc",
         "type": "vanilla",
         "era": "modern",
-        "collection": "",
+        "collection": "N/A",
         "factionsOcc": 
         [
             "None"
@@ -483,7 +483,7 @@
         "title": "NFTS",
         "type": "vanilla",
         "era": "lowtech",
-        "collection": "",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3082226640",
         "factionsOcc": 
         [
             "None"
@@ -514,7 +514,7 @@
         "title": "OPTRE",
         "type": "vanilla",
         "era": "scifi",
-        "collection": "",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019563643",
         "factionsOcc": 
         [
             "OPTRE_UNSC",
@@ -544,7 +544,7 @@
         "title": "Pedagne",
         "type": "vanilla",
         "era": "modern",
-        "collection": "",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019565642",
         "factionsOcc": 
         [
             "PED_ITA_Temperate",
@@ -572,7 +572,7 @@
         "title": "PLA",
         "type": "vanilla",
         "era": "modern",
-        "collection": "",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019566287",
         "factionsOcc": 
         [
             "None"
@@ -601,7 +601,7 @@
         "title": "RACS",
         "type": "rhs",
         "era": "modern",
-        "collection": "",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019567083",
         "factionsOcc": 
         [
             "RACS_Army"
@@ -628,7 +628,7 @@
         "title": "RHS",
         "type": "rhs",
         "era": "modern",
-        "collection": "",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019567905",
         "factionsOcc": 
         [
             "RHS_USMC_Arid", 
@@ -660,7 +660,7 @@
         "title": "SPE + IFA",
         "type": "vanilla",
         "era": "lowtech",
-        "collection": "",
+        "collection": "https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/ + https://steamcommunity.com/sharedfiles/filedetails/?id=2648308937",
         "factionsOcc": 
         [
             "SPE_IFA_WEH"
@@ -687,7 +687,7 @@
         "title": "STALKER",
         "type": "vanilla",
         "era": "modern",
-        "collection": "",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3033192423",
         "factionsOcc": 
         [
             "STALKER_Military",
@@ -718,7 +718,7 @@
         "title": "SFP",
         "type": "vanilla",
         "era": "modern",
-        "collection": "",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3019568578",
         "factionsOcc": 
         [
             "SFP_SWE_Temperate",
@@ -747,7 +747,7 @@
         "title": "TMT",
         "type": "vanilla",
         "era": "modern",
-        "collection": "",
+        "collection": "https://steamcommunity.com/workshop/filedetails/?id=3136919159",
         "factionsOcc": 
         [
             "TMT_Army"
@@ -774,7 +774,7 @@
         "title": "TFC",
         "type": "rhs",
         "era": "modern",
-        "collection": "",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3063926843",
         "factionsOcc": 
         [
             "TFC_Army", 
@@ -802,7 +802,7 @@
         "title": "Unsung",
         "type": "vanilla",
         "era": "coldwar",
-        "collection": "",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=943001311",
         "factionsOcc": 
         [
             "UNS_PAVN"
