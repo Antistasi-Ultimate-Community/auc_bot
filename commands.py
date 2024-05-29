@@ -36,7 +36,7 @@ class changelog_modal(ui.Modal):
 
     version_textinput = ui.TextInput(label="Version", default="10.0.0")
     changelog_url_textinput = ui.TextInput(label="Changelog URL", default="https://antistasiultimate.com")
-    changelog_textinput = ui.TextInput(label="Changelog", style=discord.TextStyle.paragraph, default="This is a changelog!", max_length=800)
+    changelog_textinput = ui.TextInput(label="Changelog", style=discord.TextStyle.paragraph, default="This is a changelog!", max_length=930)
 
     async def on_submit(self, interaction: discord.Interaction):
         embed = send_changelog(interaction=interaction, changelog={"version": self.version_textinput, "changelog": [self.changelog_textinput, self.changelog_url_textinput]}, mod_type=self.mod_type)

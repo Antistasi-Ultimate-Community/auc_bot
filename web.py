@@ -42,9 +42,9 @@ def send_changelog(interaction, mod_type="main", changelog={"version": "10.0.0",
     changelog = changelog["changelog"]
 
     embed_message_changelog.add_field(name=f"Version: v{changelog_version}", value=f"```{changelog[0]}```\n[Full Changelog]({changelog[1]})")
-    embed_message.add_field(name=f"Target: {target}\nVersion: v{changelog_version}", value=f"[Mod Link]({target_url})\n[Changelog Link]({changelog[1]})\n\nSee the changelog below.\n\nTo avoid issues, please repair the mod in your launcher.\nIf applicable, reinstall the mod to your server (Completely delete the mod first).")
+    embed_message.add_field(name=f"Target: {target}\nVersion: v{changelog_version}", value=f"\n\n[Mod Link]({target_url})\n\nSee the changelog above.\n\nTo avoid issues, please repair the mod in your launcher.\nIf applicable, reinstall the mod to your server.\n\nShould issues still persist, try a complete reinstall and if your problem doesn't go away create a help form.")
 
-    return interaction.response.send_message(embeds=[embed_message, embed_message_changelog])
+    return interaction.response.send_message(embeds=[embed_message_changelog, embed_message])
 
 def send_message(interaction, message, local=False):    
     try:
