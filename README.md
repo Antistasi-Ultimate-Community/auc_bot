@@ -7,7 +7,9 @@ or
 `py -3 -m pip install -U discord.py`
 
 ### Manual Requirements:
-Create a `bot_token.py` file and inside it add these 2 variables:
+Create an empty folder called `logs`
+
+Additionally, create a python file called `bot_token.py` and inside it add these 2 variables:
 ```py
 bot_token = BOT_TOKEN # Replace with the bot token, as string
 debug = False
