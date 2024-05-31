@@ -146,7 +146,7 @@ def commands_init(client):
     @tree.command(name="generate_modset_help", description="Shows all of the parameters for generate_modset.", guild=guild_id)
     @app_commands.check(is_channel_bot)
     async def generate_modset_help(interaction: discord.Interaction):
-        help_message = "# USE A COMMA (,) BETWEEN EACH PARAMETER, AND DON'T USE SPACES.\n### Parameters:\n[General](<https://github.com/SilenceIsFatto/modset_generator/blob/main/README.md>)\n[Modsets](<https://github.com/SilenceIsFatto/modset_generator/blob/main/json/modsets.json#L2-L30>)"
+        help_message = "# USE A COMMA (,) BETWEEN EACH PARAMETER, AND DON'T USE SPACES.\nhttps://github.com/Antistasi-Ultimate-Community/auc_bot/wiki/Modset-Generator"
         message = send_message(interaction=interaction, message=help_message, local=True)
         await message
 
