@@ -152,7 +152,7 @@ def commands_init(client):
 
     @tree.command(name="generate_modset", description="Generates a modset with given parameters.", guild=guild_id)
     @app_commands.check(is_channel_bot)
-    async def generate_modset(interaction: discord.Interaction, modsets: str, climates: str = "", era: Literal["modern", "scifi", "lowtech", "coldwar"] = "", key: Literal["vanilla", "rhs"] = "", dlc: str = "", double_occ: int = 0, simple: bool = True):
+    async def generate_modset(interaction: discord.Interaction, modsets: str, climates: str = "", era: Literal["modern", "scifi", "lowtech", "coldwar", "stalker"] = "", key: Literal["vanilla", "rhs"] = "", dlc: str = "", double_occ: int = 0, simple: bool = True):
         modsets = modsets.split(",")
         climates = climates.split(",")
         dlc = dlc.split(",")

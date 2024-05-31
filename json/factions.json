@@ -90,6 +90,36 @@
                 "title": "3CB USMC (Temperate)",
                 "climates": ["temperate"],
                 "dlc": ["none"]
+            },
+            "3CBF_MDF": 
+            {
+                "title": "3CB MDF",
+                "climates": ["arid", "temperate"],
+                "dlc": ["none"]
+            },
+            "3CBF_KRG": 
+            {
+                "title": "3CB KRG",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "3CBF_ION": 
+            {
+                "title": "3CB ION",
+                "climates": ["temperate", "tropical"],
+                "dlc": ["none"]
+            },
+            "3CBF_ION_Arid": 
+            {
+                "title": "3CB ION (Arid)",
+                "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "3CBF_ION_Arctic": 
+            {
+                "title": "3CB ION (Arctic)",
+                "climates": ["arctic"],
+                "dlc": ["none"]
             }
         },
         "factionsInv":
@@ -105,6 +135,30 @@
             {
                 "title": "3CB AFRF",
                 "climates": ["arid","temperate","tropical","arctic"],
+                "dlc": ["none"]
+            },
+            "3CBF_CSAT":
+            {
+                "title": "3CB CSAT",
+                "climates": ["arid","temperate","tropical","arctic"],
+                "dlc": ["none"]
+            },
+            "3CBF_CSAT_Winter":
+            {
+                "title": "3CB CSAT (Arctic)",
+                "climates": ["arctic"],
+                "dlc": ["none"]
+            },
+            "3CBF_CSAT_Temperate":
+            {
+                "title": "3CB CSAT (Temperate)",
+                "climates": ["temperate"],
+                "dlc": ["none"]
+            },
+            "3CBF_CSAT_Tropical":
+            {
+                "title": "3CB CSAT (Tropical",
+                "climates": ["tropical"],
                 "dlc": ["none"]
             }
         },
@@ -133,6 +187,12 @@
             {
                 "title": "3CB TKA",
                 "climates": ["arid"],
+                "dlc": ["none"]
+            },
+            "3CBF_Reb_ION":
+            {
+                "title": "3CB ION",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
                 "dlc": ["none"]
             }
         },
@@ -319,6 +379,57 @@
             {
                 "title": "AMF French Army (Arid)",
                 "climates": ["arid"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "android":
+    {
+        "title": "Androids",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3234836437",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "Android_Army": 
+            {
+                "title": "Android Forces",
+                "climates": ["arid", "temperate", "arctic", "tropical"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsInv": 
+        {
+            "side": "Inv",
+            "Vanguard_Army": 
+            {
+                "title": "Vanguard Forces",
+                "climates": ["arid", "temperate", "arctic", "tropical"],
+                "dlc": ["none"]
+            },
+            "Vanguard_Expeditionary": 
+            {
+                "title": "Vanguard Expeditionary Forces",
+                "climates": ["arid", "temperate", "arctic", "tropical"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsRiv":
+        {
+            "side": "Riv",
+            "Replika_Riv":
+            {
+                "title": "Replika Saboteurs",
+                "climates": ["arid", "temperate", "arctic", "tropical"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsCiv":
+        {
+            "side": "Civ",
+            "Android_Civ":
+            {
+                "title": "Android Civilians",
+                "climates": ["arid", "temperate", "arctic", "tropical"],
                 "dlc": ["none"]
             }
         }
@@ -681,6 +792,41 @@
             }
         }
     },
+    "eaw":
+    {
+        "title": "East Asia War",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3222254003",
+        "factionsOcc":
+        {
+            "side": "Occ",
+            "EAW_AI_JAP_Temperate": 
+            {
+                "title": "Imperial Japanese",
+                "climates": ["arid", "temperate", "tropical"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsReb":
+        {
+            "side": "Reb",
+            "EAW_Reb_CHI":
+            {
+                "title": "Chinese Rebels",
+                "climates": ["arid", "temperate", "tropical"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsCiv":
+        {
+            "side": "Civ",
+            "EAW_CIV":
+            {
+                "title": "EAW Civilians",
+                "climates": ["arid", "temperate", "tropical"],
+                "dlc": ["none"]
+            }
+        }
+    },
     "ffaa":
     {
         "title": "FFAA",
@@ -698,6 +844,31 @@
             {
                 "title": "FFAA Spanish Army (Arid)",
                 "climates": ["arid"],
+                "dlc": ["none"]
+            }
+        }
+    },
+    "fow":
+    {
+        "title": "Faces of War",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3222258367",
+        "factionsOcc": 
+        {
+            "side": "Occ",
+            "FOW_WEH_Temperate": 
+            {
+                "title": "FOW Wehrmacht",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
+                "dlc": ["none"]
+            }
+        },
+        "factionsInv": 
+        {
+            "side": "Inv",
+            "FOW_USA_Temperate": 
+            {
+                "title": "FOW USA",
+                "climates": ["arid", "temperate", "tropical", "arctic"],
                 "dlc": ["none"]
             }
         }

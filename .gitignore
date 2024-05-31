@@ -4,6 +4,6 @@ __pycache__/
 logs/
 *.log
 
-.bat
+*.bat
 
 bot_token.py

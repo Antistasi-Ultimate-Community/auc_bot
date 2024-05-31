@@ -5,13 +5,16 @@
         "3cbf", 
         "aegis", 
         "amf", 
+        "android", 
         "braf", 
         "bwa3rhs", 
         "bwa3cup", 
         "csa38", 
         "cup", 
         "cw", 
+        "eaw", 
         "ffaa", 
+        "fow", 
         "gm", 
         "ifa", 
         "nfts",
@@ -21,8 +24,10 @@
         "racs", 
         "rhs", 
         "spe_ifa",
+        "stalker",
         "swe",
         "tfc",
+        "tmt",
         "uns",
         "vanilla",
         "vn",
@@ -69,23 +74,34 @@
             "3CBF_LDF", 
             "3CBF_CDF", 
             "3CBF_HIDF", 
-            "3CBF_AAF", "3CBF_TKA", 
+            "3CBF_AAF", 
+            "3CBF_TKA",
             "3CBF_US_Army_Arid", 
             "3CBF_US_Army_Temperate", 
             "3CBF_USMC_Arid", 
-            "3CBF_USMC_Temperate"
+            "3CBF_USMC_Temperate",
+            "3CBF_MDF",
+            "3CBF_KRG",
+            "3CBF_ION",
+            "3CBF_ION_Arid",
+            "3CBF_ION_Arctic"
         ],
         "factionsInv": 
         [
             "3CBF_ARD", 
-            "3CBF_AFRF"
+            "3CBF_AFRF",
+            "3CBF_CSAT",
+            "3CBF_CSAT_Winter",
+            "3CBF_CSAT_Temperate",
+            "3CBF_CSAT_Tropical"
         ],
         "factionsReb": 
         [
             "3CBF_FIA", 
             "3CBF_NAPA", 
             "3CBF_CCM", 
-            "3CBF_TKM"
+            "3CBF_TKM",
+            "3CBF_Reb_ION"
         ],
         "factionsRiv": 
         [
@@ -164,6 +180,34 @@
         "factionsCiv": 
         [
             "None"
+        ]
+    },
+    "android": 
+    {
+        "title": "Android Ascension",
+        "type": "vanilla",
+        "era": "scifi",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3234836437",
+        "factionsOcc": 
+        [
+            "Android_Army"
+        ],
+        "factionsInv": 
+        [
+            "Vanguard_Army",
+            "Vanguard_Expeditionary"
+        ],
+        "factionsReb": 
+        [
+            "None"
+        ],
+        "factionsRiv": 
+        [
+            "Replika_Riv"
+        ],
+        "factionsCiv": 
+        [
+            "Android_Civ"
         ]
     },
     "braf": 
@@ -356,6 +400,33 @@
             "None"
         ]
     },
+    "eaw": 
+    {
+        "title": "East Asia War",
+        "type": "vanilla",
+        "era": "lowtech",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3222254003",
+        "factionsOcc": 
+        [
+            "EAW_AI_JAP_Temperate"
+        ],
+        "factionsInv": 
+        [
+            "None"
+        ],
+        "factionsReb": 
+        [
+            "EAW_Reb_CHI"
+        ],
+        "factionsRiv": 
+        [
+            "None"
+        ],
+        "factionsCiv": 
+        [
+            "EAW_CIV"
+        ]
+    },
     "ffaa": 
     {
         "title": "FFAA",
@@ -370,6 +441,33 @@
         "factionsInv": 
         [
             "None"
+        ],
+        "factionsReb": 
+        [
+            "None"
+        ],
+        "factionsRiv": 
+        [
+            "None"
+        ],
+        "factionsCiv": 
+        [
+            "None"
+        ]
+    },
+    "fow": 
+    {
+        "title": "Faces of War",
+        "type": "vanilla",
+        "era": "lowtech",
+        "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3222258367",
+        "factionsOcc": 
+        [
+            "FOW_WEH_Temperate"
+        ],
+        "factionsInv": 
+        [
+            "FOW_USA_Temperate"
         ],
         "factionsReb": 
         [
@@ -686,7 +784,7 @@
     {
         "title": "STALKER",
         "type": "vanilla",
-        "era": "modern",
+        "era": "stalker",
         "collection": "https://steamcommunity.com/sharedfiles/filedetails/?id=3033192423",
         "factionsOcc": 
         [
