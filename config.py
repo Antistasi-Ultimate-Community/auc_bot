@@ -36,7 +36,7 @@ else:
     #NORMAL
     guild_id = discord.Object(817005365740044289)
     guild_roles_admin = [817012725183807509] # Admin
-    guild_roles_moderator = [817012746608443412, 1143194227187122208, 1016040774581882950] # Moderator, Staff, Dev
+    guild_roles_moderator = [1246558470082134098, 817012746608443412, 1143194227187122208, 1016040774581882950] # Head Moderator, Moderator, Staff, Dev
     guild_channel_bot = 817722186486775808
     guild_name_bot = "AUC"
 
