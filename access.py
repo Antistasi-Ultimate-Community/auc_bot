@@ -18,7 +18,7 @@ def is_admin(interaction: discord.Interaction):
         return False
 
 def is_moderator(interaction: discord.Interaction):
-    if (is_admin):
+    if (is_admin(interaction)):
         return True
 
     roles = interaction.user.roles
@@ -31,7 +31,7 @@ def is_moderator(interaction: discord.Interaction):
         return False
 
 def is_channel_bot(interaction: discord.Interaction):
-    if (is_moderator):
+    if (is_moderator(interaction)):
         return True
 
     channel_id = interaction.channel.id

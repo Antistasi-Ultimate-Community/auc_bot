@@ -157,7 +157,7 @@
             },
             "3CBF_CSAT_Tropical":
             {
-                "title": "3CB CSAT (Tropical",
+                "title": "3CB CSAT (Tropical)",
                 "climates": ["tropical"],
                 "dlc": ["none"]
             }

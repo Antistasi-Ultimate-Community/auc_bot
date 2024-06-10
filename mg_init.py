@@ -3,6 +3,10 @@ import os
 from mg_modset_json import read_json_return
 from mg_modset_json import read_json_return_dict
 
+from mg_common_vars import all_dlc
+from mg_common_vars import all_climates
+from mg_common_vars import all_modsets
+
 from log import log_message
 
 from file_operations import write_to_file
@@ -28,21 +32,34 @@ def grab_collections(modsets=[""]):
 
     return collections
 
-def init(modsets=[""], climates=[""], era="", key="", dlc=[""], double_occ=0, simple=False):
+def init(modsets=[""], climates=["all"], era="", key="", dlc=[""], double_occ=0, simple=False):
     # os.system('cls')
     log_message(-1, guild_log_modset_init_start, space=True)
 
-    if (climates == ["all"]):
-        climates = ["arid", "arctic", "temperate", "tropical"]
+    if (climates == ["all"] or climates == [""]):
+        climates = all_climates
+
+    if (dlc == [""]):
+        dlc = all_dlc
 
     setting_choices = read_json_return("settings", "choices")
 
-    print(modsets)
-
     if (modsets == [""] or modsets[0] == "all"):
-        modset = read_json_return("modsets", "modsets")
+        modset = all_modsets
     else:
         modset = modsets
+
+    for mod in modset:
+        if (mod not in all_modsets):
+            raise ValueError(f"Bad modset. '{mod}' is not supported!")
+
+    for climate in climates:
+        if (climate not in all_climates):
+            raise ValueError(f"Bad climate. '{climate}' is not supported!")
+
+    for single_dlc in dlc:
+        if (single_dlc not in all_dlc):
+            raise ValueError(f"Bad DLC. '{single_dlc}' is not supported!")
 
     log_message(-1, f"Final Modset(s): {modset}")
     log_message(-1, f"Climate: {climates}")
