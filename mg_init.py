@@ -86,4 +86,5 @@ def init(modsets=[""], climates=["all"], era="", key="", dlc=[""], double_occ=0,
 
     return message
 
-# message = init(modsets="random_multiple", climates=["arctic"], era="lowtech", key="", dlc=["none"], double_occ=0)
+if (__name__ == "__main__"):
+    init(modsets=["all"], climates=["all"], era="", key="", dlc=["none"], double_occ=0)

@@ -127,7 +127,7 @@ def commands_init(client):
 
     @tree.command(name="wiki", description="Link the Antistasi Ultimate wiki.", guild=guild_id)
     @app_commands.check(is_moderator)
-    async def wiki(interaction: discord.Interaction, wiki_page: Literal["FAQ", "Features", "Maps", "Mods", "Extender-Addons", "Developers", "Developer-Documentation"] = "", reply_target: str = ""):
+    async def wiki(interaction: discord.Interaction, wiki_page: Literal["FAQ", "Arms-Dealer", "Features", "Maps", "Mods", "Extender-Addons", "Developers", "Developer-Documentation"] = "", reply_target: str = ""):
 
         if (wiki_page != ""):
             url = f"https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/wiki/{wiki_page}"
@@ -160,7 +160,9 @@ def commands_init(client):
         log_message(-1, log_msg)
 
         modset_message = init(modsets=modsets, climates=climates, era=era, key=key, dlc=dlc, double_occ=double_occ, simple=simple)
-        message = send_message(interaction=interaction, message=modset_message, local=False)
+        embed = format_embed(interaction=interaction, title="Modset Generator", description=modset_message)
+        message = interaction.response.send_message(embed=embed)
+        # message = send_message(interaction=interaction, message=modset_message, local=False)
         await message
 
     @utility_message.error

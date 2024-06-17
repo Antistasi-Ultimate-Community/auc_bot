@@ -10,7 +10,6 @@ def format_embed(interaction, title=None, description=None, type="rich", colour=
 
     log_message(-1, f"{interaction.user.name} ({interaction.user.id}) is sending an embedded message.", space=True)
     log_message(-1, f"Title: {title}")
-    log_message(-1, f"Description: {description}")
     log_message(-1, f"Colour: {colour}")
     log_message(-1, f"Thumbnail: {thumbnail}")
 

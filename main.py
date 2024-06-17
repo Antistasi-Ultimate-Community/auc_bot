@@ -12,6 +12,8 @@ from config import guild_log_file
 from config import guild_log_init
 from config import guild_name_bot
 
+from events import handle_message
+
 from file_operations import write_to_file
 
 from log import log_message
@@ -45,6 +47,8 @@ class aclient(discord.Client):
 
 client = aclient()
 tree = commands_init(client)
+
+handle_message(client)
 
 client.run(token, log_handler=handler)
 

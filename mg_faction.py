@@ -117,8 +117,7 @@ def display_factions(factions, faction_dict, simple=False, collections={}):
             message = f"{message}\n<{collection}>"
 
     log_message(-1, "Writing file with modset data.")
-    write_to_file(guild_log_file, data=[message_debug], type="a+")
-    write_to_file(guild_log_file, data=[message], type="a+")
+    log_message(-1, f"Final factions: {factions_occ[0]}, {factions_inv[0]}, {factions_reb[0]}, {factions_riv[0]}, {factions_civ[0]}")
 
     return message
 
