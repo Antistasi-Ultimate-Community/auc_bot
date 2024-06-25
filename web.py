@@ -6,16 +6,26 @@ from config import guild_log_copyright
 from log import log_message
 
 #https://gist.github.com/thomasbnt/b6f455e2c7d743b796917fa3c205f812
-def format_embed(interaction, title=None, description=None, type="rich", colour=15844367, thumbnail="https://antistasiultimate.com/images/UACLogoSmall.png"):
+def format_embed(interaction=None, author=None, title=None, description=None, type="rich", colour=15844367, thumbnail="https://antistasiultimate.com/images/UACLogoSmall.png", footer=guild_log_copyright):
 
-    log_message(-1, f"{interaction.user.name} ({interaction.user.id}) is sending an embedded message.", space=True)
-    log_message(-1, f"Title: {title}")
-    log_message(-1, f"Colour: {colour}")
-    log_message(-1, f"Thumbnail: {thumbnail}")
+    if (interaction == None and author == None):
+        raise Exception("No interaction or user given in format_embed.")
+
+    if (interaction != None):
+        author_name = interaction.user.name
+        author_id = interaction.user.id
+    else:
+        author_name = author.name
+        author_id = author.id
+
+    log_message(2, f"{author_name} ({author_id}) is sending an embedded message.", space=True)
+    log_message(2, f"Title: {title}")
+    log_message(2, f"Colour: {colour}")
+    log_message(2, f"Thumbnail: {thumbnail}")
 
     embed_message = discord.Embed(title=title, description=description, type=type, colour=colour)
     embed_message.set_thumbnail(url=thumbnail)
-    embed_message.set_footer(text=guild_log_copyright)
+    embed_message.set_footer(text=footer)
     return embed_message
 
 def send_changelog(interaction, mod_type="main", changelog={"version": "10.0.0", "changelog": ["Test", "URL"]}):

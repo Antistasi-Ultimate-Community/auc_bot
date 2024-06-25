@@ -28,7 +28,6 @@ def grab_random_factions(faction_dict):
         if (faction_values == []):
             faction_values = ["N/A"]
 
-        # print(faction_values)
         faction = select_random(faction_values)
         if (faction_values == ["N/A"]):
             faction_name = "N/A"
@@ -43,8 +42,6 @@ def return_faction_choices(modset, climates=[""], era="", key="", dlc=[""], doub
 
     modset_dict = read_json_return_dict("modsets")
 
-    # print(climates, era, key, dlc, double_occ)
-
     faction_dict = grab_modset_data(modset, modset_dict)
     faction_dict_unfiltered = grab_modset_data(modset, modset_dict)
 
@@ -56,7 +53,6 @@ def return_faction_choices(modset, climates=[""], era="", key="", dlc=[""], doub
         faction_dict["factionsInv"].update(factions_occ)
 
     mg_faction_validation.validate_faction_data(faction_dict, modset_dict, climates=climates, era=era, key=key, dlc=dlc, double_occ=double_occ)
-    # print(faction_dict)
     factions = grab_random_factions(faction_dict)
 
     return [factions, faction_dict_unfiltered]

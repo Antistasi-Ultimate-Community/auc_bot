@@ -6,6 +6,8 @@ from bot_token import debug
 from datetime import date
 from datetime import datetime
 
+# Need to convert most of the variables in this file to json, that way we can add/remove during runtime
+
 def guild_day_time(type="", type_format=""):
     if (type == ""):
         exit()
@@ -29,15 +31,17 @@ if (debug):
     #DEBUG
     guild_id = discord.Object(599612913879351300)
     guild_roles_admin = [599615857378983973]
-    guild_roles_moderator = [599615857378983973]
-    guild_channel_bot = 1241765042597265499
+    guild_roles_moderator = guild_roles_admin + []
+    guild_roles_log_exempt = guild_roles_moderator + []
+    guild_channel_bot = 1255143195097043005
     guild_name_bot = "AUC"
 else:
     #NORMAL
     guild_id = discord.Object(817005365740044289)
     guild_roles_admin = [817012725183807509] # Admin
-    guild_roles_moderator = [1246558470082134098, 817012746608443412, 1143194227187122208, 1016040774581882950] # Head Moderator, Moderator, Staff, Dev
-    guild_channel_bot = 817722186486775808
+    guild_roles_moderator = guild_roles_admin + [1246558470082134098, 817012746608443412, 1143194227187122208, 1016040774581882950] # Head Moderator, Moderator, Staff, Dev
+    guild_roles_log_exempt = guild_roles_moderator + [1151867794418311209, 1218816913107451984, 1241819466371960836] # Dev Helper, Texture Dev, AUC
+    guild_channel_bot = 1255143679929090098
     guild_name_bot = "AUC"
 
 guild_log_file = f"logs/{day}_{time}-discord.log"

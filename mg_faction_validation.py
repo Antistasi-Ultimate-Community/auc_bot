@@ -54,7 +54,6 @@ def validate_faction_climate(faction_climate, desired_climate=[""]):
         return False
 
 def validate_faction(faction_climates, faction_era, faction_key, faction_dlc, climates=[""], era="", key="", dlc=[""], double_occ=0):
-    # print(climates, era, key, dlc, double_occ)
 
     validation_climate = validate_faction_climate(faction_climates, desired_climate=climates)
     validation_era = validate_faction_era(faction_era, desired_era=era)
@@ -81,8 +80,6 @@ def validate_faction_data(faction_dict, modset_dict, climates=[""], era="", key=
 
             faction_key = modset_dict[faction_modset]["type"]
             faction_era = modset_dict[faction_modset]["era"]
-
-            # print(climates, era, key, dlc, double_occ)
             
             validation = validate_faction(faction_climates, faction_era, faction_key, faction_dlc, climates=climates, era=era, key=key, dlc=dlc, double_occ=double_occ)
             

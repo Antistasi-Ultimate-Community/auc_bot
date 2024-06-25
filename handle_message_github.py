@@ -1,7 +1,6 @@
 from web import return_url
 
 def return_pull(pull_index=-1):
-    print(pull_index)
     if (pull_index == -1):
         raise TypeError("pull_index was not passed to return_pull function!")
     else:

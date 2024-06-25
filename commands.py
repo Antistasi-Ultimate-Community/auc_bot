@@ -144,14 +144,12 @@ def commands_init(client):
         await message
 
     @tree.command(name="generate_modset_help", description="Shows all of the parameters for generate_modset.", guild=guild_id)
-    @app_commands.check(is_channel_bot)
     async def generate_modset_help(interaction: discord.Interaction):
         help_message = "# USE A COMMA (,) BETWEEN EACH PARAMETER, AND DON'T USE SPACES.\nhttps://github.com/Antistasi-Ultimate-Community/auc_bot/wiki/Modset-Generator"
         message = send_message(interaction=interaction, message=help_message, local=True)
         await message
 
     @tree.command(name="generate_modset", description="Generates a modset with given parameters.", guild=guild_id)
-    @app_commands.check(is_channel_bot)
     async def generate_modset(interaction: discord.Interaction, modsets: str, climates: str = "", era: Literal["modern", "scifi", "lowtech", "coldwar", "stalker"] = "", key: Literal["vanilla", "rhs"] = "", dlc: str = "", double_occ: bool = False, simple: bool = True):
         modsets = modsets.split(",")
         climates = climates.split(",")
