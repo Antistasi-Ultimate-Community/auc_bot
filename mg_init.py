@@ -9,7 +9,6 @@ from mg_common_vars import all_modsets
 
 from log import log_message
 
-from file_operations import write_to_file
 from config import guild_log_file
 from config import guild_log_modset_init_start
 from config import guild_log_modset_init_finish

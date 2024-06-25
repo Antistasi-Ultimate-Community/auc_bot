@@ -6,6 +6,8 @@ from bot_token import debug
 from datetime import date
 from datetime import datetime
 
+from main_git import start_git_client
+
 # Need to convert most of the variables in this file to json, that way we can add/remove during runtime
 
 def guild_day_time(type="", type_format=""):
@@ -60,3 +62,5 @@ guild_error_notmoderator = "You are not allowed to use this command."
 
 def url_missing(interaction, local=True):
     return interaction.response.send_message("This URL doesn't exist or is returning 404.", ephemeral=local)
+
+git_client = start_git_client()

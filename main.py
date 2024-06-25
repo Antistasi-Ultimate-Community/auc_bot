@@ -18,11 +18,11 @@ from config import guild_roles_log_exempt
 
 from events import handle_message
 
-from file_operations import write_to_file
-
 from log import log_message
 
 from commands import commands_init
+
+from config import git_client
 
 if not os.path.exists("logs"):
     os.makedirs("logs")
@@ -50,6 +50,9 @@ class aclient(discord.Client):
         except:
             log_message(-1, ("Something went wrong!"))
 
+    async def close(self):
+        git_client.close()
+        
 client = aclient()
 tree = commands_init(client)
 

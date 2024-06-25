@@ -29,9 +29,9 @@ def format_embed(interaction=None, author=None, title=None, description=None, ty
     return embed_message
 
 def send_changelog(interaction, mod_type="main", changelog={"version": "10.0.0", "changelog": ["Test", "URL"]}):
-    log_message(-1, f"{interaction.user.name} ({interaction.user.id}) is sending a changelog embed.", space=True)
-    log_message(-1, f"Mod Type: {mod_type}")
-    log_message(-1, f"Changelog Version/URL: {changelog}")
+    log_message(2, f"{interaction.user.name} ({interaction.user.id}) is sending a changelog embed.", space=True)
+    log_message(2, f"Mod Type: {mod_type}")
+    log_message(2, f"Changelog Version/URL: {changelog}")
 
     if (mod_type == "Public Testing"):
         colour = 16711680 #red
@@ -55,10 +55,13 @@ def send_changelog(interaction, mod_type="main", changelog={"version": "10.0.0",
 
     return interaction.response.send_message(embeds=[embed_message_changelog, embed_message])
 
-def send_message(interaction, message, local=False):    
+def send_message(interaction, message, local=False, just_message=False):    
     try:
         if (local == False):
-            log_message(-1, (f"{interaction.user.name} is sending a message: {message}"))
+            log_message(1, (f"{interaction.user.name} is sending a message: {message}"))
+
+        if (just_message):
+            return message
             
         return interaction.response.send_message(message, ephemeral=local)
     except: # should probably add a proper exception here
