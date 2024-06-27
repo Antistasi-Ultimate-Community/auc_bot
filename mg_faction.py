@@ -9,8 +9,6 @@ from mg_select_random import select_random
 
 import mg_faction_validation
 
-from file_operations import write_to_file
-
 from mg_common_vars import *
 
 # from modset import *
