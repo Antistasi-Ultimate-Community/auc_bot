@@ -26,6 +26,7 @@ def handle_message(client):
         client_id = client.user.id
         content = message.content
         channel = message.channel
+        message_link = message.jump_url
 
         # Ideally we shouldn't be running grab_exempt_channels each time a message is sent, but caching isn't viable rn
         if (channel in grab_exempt_channels(client)):
@@ -41,7 +42,7 @@ def handle_message(client):
             reply = identifier_github(content=content)
 
         log_message(-1, f"{author_name}: {content} ({channel})")
-        embed = log_message_channel(message=content, author=author, channel=channel)
+        embed = log_message_channel(message=content, author=author, channel=channel, message_link=message_link)
 
         if (reply != None):
             await channel.send(reply)

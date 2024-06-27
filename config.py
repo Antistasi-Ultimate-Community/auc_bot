@@ -2,9 +2,12 @@ import discord
 from discord import app_commands
 
 from bot_token import debug
+from bot_token import github_login
 
 from datetime import date
 from datetime import datetime
+
+from main_git import start_git_client
 
 # Need to convert most of the variables in this file to json, that way we can add/remove during runtime
 
@@ -30,7 +33,7 @@ print(f"{day}_{time}")
 if (debug):
     #DEBUG
     guild_id = discord.Object(599612913879351300)
-    guild_roles_admin = [599615857378983973]
+    guild_roles_admin = []
     guild_roles_moderator = guild_roles_admin + []
     guild_roles_log_exempt = guild_roles_moderator + []
     guild_channel_log_exempt = [599612914567086091]
@@ -49,6 +52,9 @@ else:
 guild_log_file = f"logs/{day}_{time}-discord.log"
 guild_log_init = f"Bot initialization"
 guild_log_copyright = f"Copyright © 2023 - 2024 Antistasi Ultimate All Rights Reserved"
+
+guild_git_repo = f"SilenceIsFatto/A3-Antistasi-Ultimate"
+guild_git_repo_debug = f"Antistasi-Ultimate-Community/testing-grounds"
 
 def guild_log_spacer(message):
     spacer = f"\--------- {message} ---------/"
@@ -71,3 +77,20 @@ def grab_exempt_channels(client):
         exempt_channels.append(channel)
 
     return exempt_channels
+
+async def shutdown(client):
+    print(f"We have logged out of {client.user}. ID: {client.user.id}")
+    
+    await client.close() # probably best to await the client to close itself, as it spams errors before shutting down otherwise
+
+    exit()
+
+async def send_log(client, interaction=None):
+    channel_bot = client.get_channel(guild_channel_bot)
+
+    if (interaction == None):
+        await channel_bot.send(file=discord.File(guild_log_file))
+    else:
+        await interaction.response.send_message(file=discord.File(guild_log_file))
+
+git_client = start_git_client(github_login=github_login)
