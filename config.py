@@ -53,6 +53,9 @@ guild_log_file = f"logs/{day}_{time}-discord.log"
 guild_log_init = f"Bot initialization"
 guild_log_copyright = f"Copyright © 2023 - 2024 Antistasi Ultimate All Rights Reserved"
 
+guild_git_repo = f"SilenceIsFatto/A3-Antistasi-Ultimate"
+guild_git_repo_debug = f"Antistasi-Ultimate-Community/testing-grounds"
+
 def guild_log_spacer(message):
     spacer = f"\--------- {message} ---------/"
 
@@ -81,5 +84,13 @@ async def shutdown(client):
     await client.close() # probably best to await the client to close itself, as it spams errors before shutting down otherwise
 
     exit()
+
+async def send_log(client, interaction=None):
+    channel_bot = client.get_channel(guild_channel_bot)
+
+    if (interaction == None):
+        await channel_bot.send(file=discord.File(guild_log_file))
+    else:
+        await interaction.response.send_message(file=discord.File(guild_log_file))
 
 git_client = start_git_client(github_login=github_login)
