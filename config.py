@@ -35,6 +35,7 @@ if (debug):
     guild_roles_admin = [599615857378983973]
     guild_roles_moderator = guild_roles_admin + []
     guild_roles_log_exempt = guild_roles_moderator + []
+    guild_channel_log_exempt = [599612914567086091]
     guild_channel_bot = 1255143195097043005
     guild_name_bot = "AUC"
 else:
@@ -43,6 +44,7 @@ else:
     guild_roles_admin = [817012725183807509] # Admin
     guild_roles_moderator = guild_roles_admin + [1246558470082134098, 817012746608443412, 1143194227187122208, 1016040774581882950] # Head Moderator, Moderator, Staff, Dev
     guild_roles_log_exempt = guild_roles_moderator + [1151867794418311209, 1218816913107451984, 1241819466371960836] # Dev Helper, Texture Dev, AUC
+    guild_channel_log_exempt = [817005366189621279]
     guild_channel_bot = 1255143679929090098
     guild_name_bot = "AUC"
 
@@ -62,5 +64,14 @@ guild_error_notmoderator = "You are not allowed to use this command."
 
 def url_missing(interaction, local=True):
     return interaction.response.send_message("This URL doesn't exist or is returning 404.", ephemeral=local)
+
+def grab_exempt_channels(client):
+    # Convert ID to actual channel
+    exempt_channels = []
+    for channel_id in guild_channel_log_exempt:
+        channel = client.get_channel(channel_id)
+        exempt_channels.append(channel)
+
+    return exempt_channels
 
 git_client = start_git_client()
