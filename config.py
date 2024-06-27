@@ -71,5 +71,3 @@ def grab_exempt_channels(client):
         exempt_channels.append(channel)
 
     return exempt_channels
-
-git_client = start_git_client()
