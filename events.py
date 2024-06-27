@@ -27,6 +27,7 @@ def handle_message(client):
         content = message.content
         channel = message.channel
 
+        # Ideally we shouldn't be running grab_exempt_channels each time a message is sent, but caching isn't viable rn
         if (channel in grab_exempt_channels(client)):
             return False
 
