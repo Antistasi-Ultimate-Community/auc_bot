@@ -24,8 +24,10 @@ Name this file `[start].bat` and inside of it place the code that will run main.
 Create a python file called `bot_token.py` in the root folder and inside it add these 2 variables:
 ```py
 token = BOT_TOKEN # Replace with the bot token, as string
+github_login = GITHUB_TOKEN # Replace with the github token, as string
 debug = False # Keep as false unless you know exactly what this does
 ```
+github_login can also be account login tuple `("account name", "password")` but this is feature limited
 
 # Features:
 A ton of slash commands to make life easier.
