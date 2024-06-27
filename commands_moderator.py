@@ -34,7 +34,7 @@ def handle_utility_message(message):
         message_send = "https://discord.com/channels/817005365740044289/1208764622455185418"
 
     if (message == "Saves"):
-        message_send = "Save location: `Documents\Arma 3 (+ Other Profiles\\Name)`\nName.Arma3Profile\nName.vars.Arma3Profile\nAntistasiPlus.vars\nIf transferring to server: Rename 'Name' to match the servers name."
+        message_send = "Save location: `Documents\\Arma 3 (+ Other Profiles\\Name)`\nName.Arma3Profile\nName.vars.Arma3Profile\nAntistasiPlus.vars\nIf transferring to server: Rename 'Name' to match the servers name."
 
     return message_send
 

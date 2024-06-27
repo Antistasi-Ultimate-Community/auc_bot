@@ -2,6 +2,7 @@ import discord
 from discord import app_commands
 
 from bot_token import debug
+from bot_token import github_login
 
 from datetime import date
 from datetime import datetime
@@ -32,7 +33,7 @@ print(f"{day}_{time}")
 if (debug):
     #DEBUG
     guild_id = discord.Object(599612913879351300)
-    guild_roles_admin = [599615857378983973]
+    guild_roles_admin = []
     guild_roles_moderator = guild_roles_admin + []
     guild_roles_log_exempt = guild_roles_moderator + []
     guild_channel_log_exempt = [599612914567086091]
@@ -74,4 +75,11 @@ def grab_exempt_channels(client):
 
     return exempt_channels
 
-git_client = start_git_client()
+async def shutdown(client):
+    print(f"We have logged out of {client.user}. ID: {client.user.id}")
+    
+    await client.close() # probably best to await the client to close itself, as it spams errors before shutting down otherwise
+
+    exit()
+
+git_client = start_git_client(github_login=github_login)

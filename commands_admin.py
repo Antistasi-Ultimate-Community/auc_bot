@@ -5,12 +5,16 @@ from discord import ui
 
 from config import guild_id
 from config import git_client
+from config import guild_log_init
+from config import shutdown
 
 from access import is_admin
 
 from typing import Literal
 
+from handle_git import grab_repo
 from handle_git import grab_issues
+from handle_git import open_issue
 
 from log import log_message
 
@@ -33,9 +37,9 @@ class changelog_modal(ui.Modal):
 
 def commands_admin(client, tree):
     
-    @tree.command(name="list_open_docs", description="Lists open issues/pull requests on the Antistasi Ultimate wiki.", guild=guild_id)
+    @tree.command(name="git_list_open_docs", description="Lists open issues/pull requests on the Antistasi Ultimate github.", guild=guild_id)
     @app_commands.check(is_admin)
-    async def list_open_docs(interaction: discord.Interaction, type: Literal["issue", "pull"] = ""):
+    async def git_list_open_docs(interaction: discord.Interaction, type: Literal["issues", "pull"] = ""):
 
         await interaction.response.defer(thinking=True)
         
@@ -43,10 +47,19 @@ def commands_admin(client, tree):
 
         text = issues[1]
 
-        embed = format_embed(interaction=interaction, title=f"{type}s", description=text)
+        embed = format_embed(interaction=interaction, title=f"{type}", description=text)
 
         # message = send_message(interaction=interaction, message=text, local=False, just_message=True)
         await interaction.followup.send(embed=embed)
+
+    @tree.command(name="git_create_issue", description="Creates an issue on the Antistasi Ultimate github.", guild=guild_id)
+    @app_commands.check(is_admin)
+    async def git_create_issue(interaction: discord.Interaction, title: str):
+        repo = grab_repo(git_client=git_client)
+        issue = open_issue(repo=repo, title=title)
+
+        message = send_message(interaction=interaction, message=issue, local=False)
+        await message
 
     @tree.command(name="embed", description="Embeds a message with given args.", guild=guild_id)
     @app_commands.check(is_admin)
@@ -59,18 +72,15 @@ def commands_admin(client, tree):
     async def changelog(interaction: discord.Interaction, mod_type: Literal["Main", "Public Testing"]):
         await interaction.response.send_modal(changelog_modal(mod_type))
 
-    @tree.command(name="shutdown", description="Shuts down the bot.", guild=guild_id)
+    @tree.command(name="shutdown_bot", description="Shuts down the bot.", guild=guild_id)
     @app_commands.check(is_admin)
-    async def shutdown(interaction: discord.Interaction, confirm: bool):
+    async def shutdown_bot(interaction: discord.Interaction, confirm: bool):
         if (confirm):
+            log_message(-1, (f"{interaction.user.display_name} ({interaction.user.id}) is attempting shutdown."), header=guild_log_init, space=True)
             message = send_message(interaction=interaction, message=f"Shutting down the bot now.", local=False)
             await message
 
-            log_message(-1, (f"{interaction.user.display_name} ({interaction.user.id}) is attempting shutdown."), header=guild_log_init, space=True)
-            log_message(-1, (f"We have logged out of {client.user}. ID: {client.user.id}"), header=guild_log_init, space=True)
-            await client.close() # probably best to await the client to close itself, as it spams errors before shutting down otherwise
-
-            exit()
+            await shutdown(client)
         else:
             message = send_message(interaction=interaction, message=f"Shutdown was not confirmed.", local=True)
             await message
@@ -81,10 +91,11 @@ def commands_admin(client, tree):
         message = send_message(interaction=interaction, message=text, local=False)
         await message
 
-    @list_open_docs.error
+    @git_list_open_docs.error
+    @git_create_issue.error
     @changelog.error
     @embed.error
-    @shutdown.error
+    @shutdown_bot.error
     @custom_message.error
     async def say_error(interaction : discord.Interaction, error):
         await send_message(interaction, error, local=True)

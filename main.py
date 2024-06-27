@@ -41,7 +41,7 @@ class aclient(discord.Client):
         try:
             await self.wait_until_ready()
 
-            log_message(-1, message=f'We have logged in as {client.user}. ID: {client.user.id}\n', header=guild_log_init, space=True)
+            log_message(-1, message=f'We have logged into Discord as {client.user}. ID: {client.user.id}\n', header=guild_log_init, space=True)
             log_message(-1, message=f"Admin Roles: {guild_roles_admin}\nModerator Roles: {guild_roles_moderator}\nExempt Roles: {guild_roles_log_exempt}")
 
             if not self.synced:
@@ -49,9 +49,6 @@ class aclient(discord.Client):
                 self.synced = True
         except:
             log_message(-1, ("Something went wrong!"))
-
-    async def close(self):
-        git_client.close()
         
 client = aclient()
 tree = commands_init(client)
@@ -60,4 +57,5 @@ handle_message(client)
 
 client.run(token, log_handler=handler)
 
+git_client.close()
 os.system("cls")
