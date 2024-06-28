@@ -53,8 +53,13 @@ guild_log_file = f"logs/{day}_{time}-discord.log"
 guild_log_init = f"Bot initialization"
 guild_log_copyright = f"Copyright © 2023 - 2024 Antistasi Ultimate All Rights Reserved"
 
-guild_git_repo = f"SilenceIsFatto/A3-Antistasi-Ultimate"
+guild_git_repo_normal = f"SilenceIsFatto/A3-Antistasi-Ultimate"
 guild_git_repo_debug = f"Antistasi-Ultimate-Community/testing-grounds"
+
+if (debug):
+    guild_git_repo = guild_git_repo_debug
+else:
+    guild_git_repo = guild_git_repo_normal
 
 def guild_log_spacer(message):
     spacer = f"\--------- {message} ---------/"
@@ -91,6 +96,6 @@ async def send_log(client, interaction=None):
     if (interaction == None):
         await channel_bot.send(file=discord.File(guild_log_file))
     else:
-        await interaction.response.send_message(file=discord.File(guild_log_file))
+        await interaction.response.send_message(file=discord.File(guild_log_file), ephemeral=True)
 
 git_client = start_git_client(github_login=github_login)

@@ -23,12 +23,35 @@ def grab_repo(git_client=None, repository=""):
 
     return repo
 
-def grab_issues(git_client=None, type=None):
+def grab_pulls_merge_ready(git_client=None, repo=None):
+
+    if (repo == None):
+        repo = grab_repo(git_client=git_client)
+
+    pulls_merge = {}
+    pulls_merge_numbers = []
+
+    pulls = repo.get_pulls(state='open', sort='created')
+    for pull in pulls:
+        pull_labels = pull.get_labels()
+        for label in pull_labels:
+            label_name = label.name
+            if (label_name == "ready-for-merge"):
+                title = pull.title
+                number = pull.number
+
+                pulls_merge[pull] = {"number": number, "title": title}
+                pulls_merge_numbers.append(number)
+
+    return [pulls_merge, pulls_merge_numbers]
+
+def grab_issues(git_client=None, type=None, repo=None):
 
     if (type == None):
         raise Exception(f"type returned {type}")
 
-    repo = grab_repo(git_client=git_client)
+    if (repo == None):
+        repo = grab_repo(git_client=git_client)
 
     text = ""
     issues = {}
@@ -38,9 +61,6 @@ def grab_issues(git_client=None, type=None):
     repo_issues = [issue for issue in repo_issues_open if issue.pull_request == None]
     repo_pulls = [issue for issue in repo_issues_open if issue.pull_request != None]
 
-    # write_to_file(guild_log_file, repo_issues)
-    # write_to_file(guild_log_file, repo_pulls)
-
     if (type == "issues"):
         issues_list = repo_issues
     else:
@@ -49,8 +69,6 @@ def grab_issues(git_client=None, type=None):
     for issue in issues_list:
         title = issue.title
         number = issue.number
-
-        # url = return_pull(number)
 
         url = f"https://github.com/{repo.full_name}/{type}/{number}"
 
@@ -100,15 +118,38 @@ def merge_pull(repo=None, number=None):
         pull_request = repo.get_pull(number)
 
         merge = pull_request.merge()
+
+        pull_link = f"https://github.com/{repo.full_name}/pull/{pull_request.number}"
     
     except:
-        message = f"Something went wrong. Perhaps the pull request was already merged/closed?"
+        message = f"[X] Something failed whilst merging `{pull_request.title}` (#{number}). - [It was aborted.]({pull_link})\nPerhaps the pull request was already merged/closed or has a merge conflict?"
 
         return message
 
-    pull_link = f"https://github.com/{repo.full_name}/pull/{pull_request.number}"
-
     message = f"Merged `{pull_request.title}` (#{pull_request.number}).\n[Link]({pull_link})"
+
+    return message
+
+def merge_pulls(repo=None, numbers=None):
+    if (numbers == None):
+        raise Exception(f"numbers returned {numbers}")
+
+    if (numbers == [] or len(numbers) == 0):
+        message = f"No pull requests are ready for merge."
+
+        return message
+
+    pulls_merged_num = 0
+
+    message = ""
+
+    for number in numbers:
+        pull_message = merge_pull(repo=repo, number=number)
+        message = f"{message}\n\n{pull_message}"
+        if ("[X]" not in message):
+            pulls_merged_num += 1
+
+    message = f"{message}\n\nMerged {pulls_merged_num} pulls.\n"
 
     return message
 
@@ -131,5 +172,3 @@ def update_branch(repo=None, base=None, head=None):
         message = f"You'll have to do this manually, auto merge failed. Possibly a merge conflict?"
 
         return message
-
-    return message
