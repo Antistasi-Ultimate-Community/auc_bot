@@ -24,6 +24,9 @@ from commands import commands_init
 
 from config import git_client
 
+# import signal
+# import sys
+
 if not os.path.exists("logs"):
     os.makedirs("logs")
 
@@ -31,6 +34,13 @@ handler = logging.FileHandler(filename=guild_log_file, encoding='utf-8', mode='w
 
 intents = discord.Intents.default()
 intents.message_content = True
+
+# def signal_handler(signal, frame):
+#     sys.exit(0)
+
+# signal.signal(signal.SIGINT, signal_handler)
+
+# May be useful in future ^
 
 class aclient(discord.Client):
     def __init__(self):

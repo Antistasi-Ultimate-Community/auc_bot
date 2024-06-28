@@ -102,16 +102,16 @@ def commands_admin(client, tree):
     @app_commands.check(is_admin)
     async def git_pull_create(interaction: discord.Interaction, base: str, head: str, title: str = "", body: str = ""):
         repo = grab_repo(git_client=git_client, repository=guild_git_repo)
-        pull = open_pull(repo=repo, base=base, head=head, title=title, body=body)
+        pull = open_pull(repo=repo, base=base, head=head, title=title, body=body, author=interaction.user.display_name)
 
         message = send_message(interaction=interaction, message=pull, local=False)
         await message
 
     @tree.command(name="git_issue_create", description="Creates an issue.", guild=guild_id)
     @app_commands.check(is_admin)
-    async def git_issue_create(interaction: discord.Interaction, title: str):
+    async def git_issue_create(interaction: discord.Interaction, title: str, body: str = ""):
         repo = grab_repo(git_client=git_client, repository=guild_git_repo)
-        issue = open_issue(repo=repo, title=title)
+        issue = open_issue(repo=repo, title=title, body=body, author=interaction.user.display_name)
 
         message = send_message(interaction=interaction, message=issue, local=False)
         await message
@@ -134,6 +134,8 @@ def commands_admin(client, tree):
             log_message(-1, (f"{interaction.user.display_name} ({interaction.user.id}) is attempting shutdown."), header=guild_log_init, space=True)
             message = send_message(interaction=interaction, message=f"Shutting down the bot now.", local=False)
             await message
+
+            await send_log(client)
 
             await shutdown(client)
         else:

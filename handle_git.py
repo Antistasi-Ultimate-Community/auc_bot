@@ -1,5 +1,6 @@
 from config import git_client
 from config import guild_log_file
+from config import pull_request_template
 
 from handle_message_github import return_pull
 
@@ -81,11 +82,16 @@ def grab_issues(git_client=None, type=None, repo=None):
 
     return [issues, text]
 
-def open_issue(repo=None, title=None):
+def open_issue(repo=None, title=None, body=None, author=None):
     if (title == None):
         raise Exception("Creating an issue requires a title. Please give one and try again!")
 
-    issue = repo.create_issue(title=title, body="This is an auto-generated issue from AUC#7708 (Discord).")
+    if (author == None):
+        author = "AUC#7708"
+
+    body = f"This is an auto-generated issue from {author} (Discord).\n\n{body}"
+
+    issue = repo.create_issue(title=title, body=body)
 
     issue_link = f"https://github.com/{repo.full_name}/issues/{issue.number}"
 
@@ -93,15 +99,20 @@ def open_issue(repo=None, title=None):
 
     return message
 
-def open_pull(repo=None, base=None, head=None, title=None, body=None):
+def open_pull(repo=None, base=None, head=None, title=None, body=None, author=None):
     if (base == None or head == None):
         raise Exception("Creating a pull request requires a base and head branch. Please provide them and try again!")
 
     if (title == None or title == ""):
         title = f"Automated PR ({base} << {head})"
 
+    if (author == None):
+        author = "AUC#7708"
+
     if (body == None or body == ""):
-        body = f"This is an auto-generated pull request from AUC#7708 (Discord)."
+        body = f"**_This is an auto-generated pull request from {author} (Discord)._**"
+
+    body = f"{body}\n{pull_request_template}"
 
     title = f"[BOT] {title}"
 
