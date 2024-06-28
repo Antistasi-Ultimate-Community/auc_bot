@@ -135,8 +135,6 @@ def commands_admin(client, tree):
             message = send_message(interaction=interaction, message=f"Shutting down the bot now.", local=False)
             await message
 
-            await send_log(client)
-
             await shutdown(client)
         else:
             message = send_message(interaction=interaction, message=f"Shutdown was not confirmed.", local=True)

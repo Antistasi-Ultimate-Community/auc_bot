@@ -115,6 +115,8 @@ def grab_exempt_channels(client):
 
 async def shutdown(client):
     print(f"We have logged out of {client.user}. ID: {client.user.id}")
+
+    await send_log(client)
     
     await client.close() # probably best to await the client to close itself, as it spams errors before shutting down otherwise
 
