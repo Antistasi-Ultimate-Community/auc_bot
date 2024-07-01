@@ -48,9 +48,9 @@ def commands_admin(client, tree):
     # need to implement an optional "repository" argument for each "git_" command
     @tree.command(name="git_list", description="Lists open issues/pull requests.", guild=guild_id)
     @app_commands.check(is_admin)
-    async def git_list(interaction: discord.Interaction, type: Literal["issues", "pull"] = ""):
+    async def git_list(interaction: discord.Interaction, type: Literal["issues", "pull"], local: bool = True):
 
-        await interaction.response.defer(thinking=True)
+        await interaction.response.defer(thinking=True, ephemeral=local)
 
         repo = grab_repo(git_client=git_client, repository=guild_git_repo)
         
@@ -61,7 +61,7 @@ def commands_admin(client, tree):
         embed = format_embed(interaction=interaction, title=f"{type}", description=text)
 
         # message = send_message(interaction=interaction, message=text, local=False, just_message=True)
-        await interaction.followup.send(embed=embed)
+        await interaction.followup.send(embed=embed, ephemeral=local)
 
     @tree.command(name="git_branch_update", description="Updates a branch with unstable.", guild=guild_id)
     @app_commands.check(is_admin)

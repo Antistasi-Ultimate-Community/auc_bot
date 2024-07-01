@@ -90,7 +90,7 @@ def commands_moderator(client, tree):
 
     @tree.command(name="players", description="Lists all players currently on a server (Default: Server 3).", guild=guild_id)
     @app_commands.check(is_moderator)
-    async def players(interaction: discord.Interaction, duration: bool = False, ip: str = None, port: int = None):
+    async def players(interaction: discord.Interaction, duration: bool = False, ip: str = None, port: int = None, local: bool = True):
 
         server = grab_server(ip=ip, port=port)
 
@@ -107,7 +107,7 @@ def commands_moderator(client, tree):
 
         players = f"{players}```"
 
-        message = send_message(interaction=interaction, message=players, local=False)
+        message = send_message(interaction=interaction, message=players, local=local)
         await message
 
     @utility_message.error

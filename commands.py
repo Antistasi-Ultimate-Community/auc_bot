@@ -31,7 +31,7 @@ def commands_init(client):
         await message
 
     @tree.command(name="generate_modset", description="Generates a modset with given parameters.", guild=guild_id)
-    async def generate_modset(interaction: discord.Interaction, modsets: str, climates: str = "", era: Literal["modern", "scifi", "lowtech", "coldwar", "stalker"] = "", key: Literal["vanilla", "rhs"] = "", dlc: str = "", double_occ: bool = False, simple: bool = True):
+    async def generate_modset(interaction: discord.Interaction, modsets: str, climates: str = "", era: Literal["modern", "scifi", "lowtech", "coldwar", "stalker"] = "", key: Literal["vanilla", "rhs"] = "", dlc: str = "", double_occ: bool = False, simple: bool = True, local: bool = True):
         modsets = modsets.split(",")
         climates = climates.split(",")
         dlc = dlc.split(",")
@@ -40,7 +40,7 @@ def commands_init(client):
 
         modset_message = init(modsets=modsets, climates=climates, era=era, key=key, dlc=dlc, double_occ=double_occ, simple=simple)
         embed = format_embed(interaction=interaction, title="Modset Generator", description=modset_message)
-        message = interaction.response.send_message(embed=embed)
+        message = interaction.response.send_message(embed=embed, ephemeral=local)
         # message = send_message(interaction=interaction, message=modset_message, local=False)
         await message
 
