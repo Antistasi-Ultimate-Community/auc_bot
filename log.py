@@ -1,6 +1,4 @@
 from file_operations import write_to_file
-from mg_modset_json import read_json_return
-from mg_modset_json import path
 
 from mg_common_vars import setting_debug_level
 

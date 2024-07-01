@@ -1,7 +1,7 @@
 import os
 
-from mg_modset_json import read_json_return
-from mg_modset_json import read_json_return_dict
+from handle_json import read_json_return
+from handle_json import read_json_return_dict
 
 from mg_common_vars import all_dlc
 from mg_common_vars import all_climates

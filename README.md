@@ -12,7 +12,7 @@
 # FIRST TIME SETUP:
 Run `[install].bat`
 or
-`pip install discord.py requests PyGithub`
+`pip install discord.py requests PyGithub python-a2s`
 
 ## Manual Requirements:
 Create a file to start the bot. This can be any file that will run the main.py file. In this case we're going to use .bat

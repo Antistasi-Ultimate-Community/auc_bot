@@ -1,5 +1,5 @@
-from mg_modset_json import read_json_return
-from mg_modset_json import read_json_return_dict
+from handle_json import read_json_return
+from handle_json import read_json_return_dict
 
 from config import guild_log_file
 

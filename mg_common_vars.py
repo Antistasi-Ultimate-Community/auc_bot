@@ -1,4 +1,4 @@
-from mg_modset_json import read_json_return
+from handle_json import read_json_return
 
 faction_types = ["factionsOcc", "factionsInv", "factionsReb", "factionsRiv", "factionsCiv"]
 

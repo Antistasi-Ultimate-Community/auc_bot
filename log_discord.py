@@ -1,8 +1,13 @@
+import discord
+
 from web import format_embed
 
 from config import guild_roles_log_exempt
 
 def log_message_channel(message=None, author=None, channel=None, message_link=None):
+    if (isinstance(author, discord.User)):
+        return None
+
     author_roles = author.roles
     author_name = author.name
     author_display_name = author.display_name

@@ -2,7 +2,6 @@ import json
 import os
 
 path = os.getcwd()
-# path = os.getcwd() + "\modset_generator"
 
 def validate_key(dict, key, value_default):
 
@@ -10,9 +9,6 @@ def validate_key(dict, key, value_default):
         raise KeyError(f"Key {key} was not found.")
 
 def read_json_return_dict(file_name, key="", value_default="default_return"):
-
-    # json.loads is a beautiful thing honestly. 
-    # Can't believe it took me this long to try it out
     
     with open(f'{path}/json/{file_name}.json', 'r') as file:
 
@@ -89,4 +85,3 @@ def update_json(data, file_name):
 
     except:
         print("Woops!")
-        # prompt.user_error("Error", "Something went wrong whilst saving settings. Some things may still work. Try creating an empty packer.json file")

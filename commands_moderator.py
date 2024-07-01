@@ -17,6 +17,9 @@ from web import send_changelog
 from web import check_url
 from web import format_embed
 
+from steam_server import grab_server
+from datetime import timedelta
+
 def handle_utility_message(message):
     log_message(-1, message)
     
@@ -85,10 +88,32 @@ def commands_moderator(client, tree):
         message = send_message(interaction=interaction, message=url, local=False)
         await message
 
+    @tree.command(name="players", description="Lists all players currently on a server (Default: Server 3).", guild=guild_id)
+    @app_commands.check(is_moderator)
+    async def players(interaction: discord.Interaction, duration: bool = False, ip: str = None, port: int = None):
+
+        server = grab_server(ip=ip, port=port)
+
+        server_players = server[1]
+
+        players = "```"
+
+        for server_player in server_players:
+            if (duration):
+                duration = "{:0>8}".format(str(timedelta(seconds=round(server_player.duration))))
+                players = f"{players}\n{server_player.name} - {duration}"
+            else:
+                players = f"{players}\n{server_player.name}"
+
+        players = f"{players}```"
+
+        message = send_message(interaction=interaction, message=players, local=False)
+        await message
 
     @utility_message.error
     @pull.error
     @issue.error
     @wiki.error
+    @players.error
     async def say_error(interaction : discord.Interaction, error):
         await send_message(interaction, error, local=True)

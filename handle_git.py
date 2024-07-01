@@ -75,6 +75,16 @@ def grab_issues(git_client=None, type=None, repo=None):
 
         text = f"{text}\n{title} - [#{number}](<{url}>)\n"
 
+        issue_labels = issue.get_labels()
+
+        labels = []
+
+        for label in issue_labels:
+            # if (label.name == "ready-for-merge"):
+            labels.append(label.name)
+
+        text = f"{text} - Labels: {labels}\n"
+
         print(number, title)
 
         issues[issue] = {"number": number, "title": title}
