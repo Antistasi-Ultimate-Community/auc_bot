@@ -178,6 +178,9 @@ def update_branch(repo=None, base=None, head=None):
     if (base == None):
         raise Exception("Updating a branch requires a base branch. Please provide one and try again!")
 
+    if (base == "unstable"):
+        raise Exception("Unstable is not allowed as the base branch. Perhaps you meant to use it as the head branch?")
+
     if (head == None):
         head = "unstable"
 

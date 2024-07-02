@@ -63,7 +63,7 @@ def commands_admin(client, tree):
         # message = send_message(interaction=interaction, message=text, local=False, just_message=True)
         await interaction.followup.send(embed=embed, ephemeral=local)
 
-    @tree.command(name="git_branch_update", description="Updates a branch with unstable.", guild=guild_id)
+    @tree.command(name="git_branch_update", description="Updates a branch with unstable. Base is merged with head (base << head)", guild=guild_id)
     @app_commands.check(is_admin)
     async def git_branch_update(interaction: discord.Interaction, base: str, head: str):
         repo = grab_repo(git_client=git_client, repository=guild_git_repo)
