@@ -160,7 +160,7 @@ def commands_admin(client, tree):
     @tree.command(name="custom_message", description="Send a custom message.", guild=guild_id)
     @app_commands.check(is_admin)
     async def custom_message(interaction: discord.Interaction, text: str):
-        message = send_message(interaction=interaction, message=text, local=False)
+        message = send_message(interaction=interaction, message=f"Custom Message - {text}", local=False)
         await message
 
     @tree.command(name="send_latest_log", description="Sends the most recent log.", guild=guild_id)
