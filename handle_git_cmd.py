@@ -13,7 +13,7 @@ def git_pull(repository=""):
     # pull from remote origin to the current working dir:
 
     repo = f"{repository}.git"
-    output = subprocess.check_output(["git", "pull", repo])
+    output = subprocess.check_output(["git", "pull", "--rebase"])
 
     print(output)
 
