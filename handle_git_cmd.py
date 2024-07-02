@@ -9,9 +9,23 @@ import sys
 
 from config import shutdown
 
-def git_pull(repository=""):
-    # pull from remote origin to the current working dir:
+def install_library(name):
+    print(f"Installing library: {name}")
+    subprocess.call([sys.executable, '-m', 'pip', 'install', name])
 
+def install_libraries(file=None):
+    if (file == None):
+        raise Exception("A file is needed to run this function.")
+
+    with open(file) as requirements:
+        lines = requirements.readlines()
+
+        for line in lines:
+            requirement = line.strip()
+
+            install_library(requirement)
+
+def git_pull(repository=""):
     repo = f"{repository}.git"
     output = subprocess.check_output(["git", "pull", "--rebase"])
 
@@ -20,6 +34,8 @@ def git_pull(repository=""):
 def update_bot(client):
 
     git_pull(guild_git_repo_bot)
+
+    install_libraries("requirements.txt")
 
     os.execl(sys.executable, "python", "main.py")
 
