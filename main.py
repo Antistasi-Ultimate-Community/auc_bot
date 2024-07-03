@@ -68,4 +68,3 @@ handle_message(client)
 client.run(token, log_handler=handler)
 
 git_client.close()
-os.system("cls")

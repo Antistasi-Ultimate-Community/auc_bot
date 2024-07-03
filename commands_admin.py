@@ -24,6 +24,8 @@ from handle_git import merge_pull
 from handle_git import merge_pulls
 from handle_git import update_branch
 
+from handle_git_cmd import update_bot
+
 from log import log_message
 
 from web import send_message
@@ -139,11 +141,26 @@ def commands_admin(client, tree):
         else:
             message = send_message(interaction=interaction, message=f"Shutdown was not confirmed.", local=True)
             await message
+            
+    @tree.command(name="restart_bot", description="Restarts the bot, will fetch `main` from github first.", guild=guild_id)
+    @app_commands.check(is_admin)
+    async def restart_bot(interaction: discord.Interaction, confirm: bool):
+        if (confirm):
+            log_message(-1, (f"{interaction.user.display_name} ({interaction.user.id}) is attempting restart."), header=guild_log_init, space=True)
+            message = send_message(interaction=interaction, message=f"Restarting the bot now.", local=False)
+            await message
+
+            # await shutdown(client)
+
+            update_bot(client)
+        else:
+            message = send_message(interaction=interaction, message=f"Shutdown was not confirmed.", local=True)
+            await message
 
     @tree.command(name="custom_message", description="Send a custom message.", guild=guild_id)
     @app_commands.check(is_admin)
     async def custom_message(interaction: discord.Interaction, text: str):
-        message = send_message(interaction=interaction, message=f"Custom Message - {text}", local=False)
+        message = send_message(interaction=interaction, message=f"User Message - {text}", local=False)
         await message
 
     @tree.command(name="send_latest_log", description="Sends the most recent log.", guild=guild_id)

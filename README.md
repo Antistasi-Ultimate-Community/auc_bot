@@ -27,10 +27,16 @@ token = BOT_TOKEN # Replace with the bot token, as string
 github_login = GITHUB_TOKEN # Replace with the github token, as string
 debug = False # Keep as false unless you know exactly what this does
 ```
-github_login can also be account login tuple `("account name", "password")` but this is feature limited
+github_login can also be account login tuple `("account name", "password")` but this is feature limited.
+
+In order for the command `/restart_bot` to work, [git](https://git-scm.com/download/win) needs to be installed.
 
 # Features:
-A ton of slash commands to make life easier.
+A ton of slash commands to make life easier. Namely:
+
+Github Integration - Allows admins to create issues, create or merge pull requests, list all open issues/pulls in a repo, etc.
+
+Server integration - The bot can recieve and parse webhook messages formatted by the companion server mod that utilises Pythia.
 
   </p>  
 </div>

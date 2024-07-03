@@ -9,6 +9,8 @@ from datetime import datetime
 
 from main_git import start_git_client
 
+import os
+
 # Need to convert most of the variables in this file to json, that way we can add/remove during runtime
 
 def guild_day_time(type="", type_format=""):
@@ -53,8 +55,11 @@ guild_log_file = f"logs/{day}_{time}-discord.log"
 guild_log_init = f"Bot initialization"
 guild_log_copyright = f"Copyright © 2023 - 2024 Antistasi Ultimate All Rights Reserved"
 
+git_repo_base = "https://github.com"
+
 guild_git_repo_normal = f"SilenceIsFatto/A3-Antistasi-Ultimate"
 guild_git_repo_debug = f"Antistasi-Ultimate-Community/testing-grounds"
+guild_git_repo_bot = f"{git_repo_base}/Antistasi-Ultimate-Community/auc_bot"
 
 if (debug):
     guild_git_repo = guild_git_repo_debug
@@ -129,5 +134,6 @@ async def send_log(client, interaction=None):
         await channel_bot.send(file=discord.File(guild_log_file))
     else:
         await interaction.response.send_message(file=discord.File(guild_log_file), ephemeral=True)
+
 
 git_client = start_git_client(github_login=github_login)
