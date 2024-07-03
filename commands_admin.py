@@ -177,6 +177,7 @@ def commands_admin(client, tree):
     @changelog.error
     @embed.error
     @shutdown_bot.error
+    @restart_bot.error
     @custom_message.error
     @send_latest_log.error
     async def say_error(interaction : discord.Interaction, error):

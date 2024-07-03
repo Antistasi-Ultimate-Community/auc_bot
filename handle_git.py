@@ -147,7 +147,7 @@ def merge_pull(repo=None, number=None):
 
         return message
 
-    message = f"Merged `{pull_request.title}` (#{pull_request.number}).\n[Link]({pull_link})"
+    message = f"Merged `{pull_request.title}` (#{pull_request.number}).\n[Link](<{pull_link}>)"
 
     return message
 
