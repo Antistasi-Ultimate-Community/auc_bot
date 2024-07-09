@@ -36,9 +36,10 @@ def handle_payload(payload=None, payload_type=None):
 
             user_name = payload_final[user_steamid]["name"]
             user_name_steam = payload_final[user_steamid]["name_steam"]
+            user_account = f"https://steamcommunity.com/profiles/{steamid}/"
 
             user = {
-                user_steamid: {"name": user_name, "name_steam": user_name_steam, "account": ""}
+                user_steamid: {"name": user_name, "name_steam": user_name_steam, "account": user_account}
             }
 
             handle_json.update_json(data=user, file_name="members")
