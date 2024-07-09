@@ -41,7 +41,7 @@ def handle_message(client):
         if (content == "" or content == None):
             return False
 
-        if (author_id == 1257005684185366579):
+        if (author_id == 1256738636364517426):
             print(f"Webhook recieved from {author_name}")
             recieve_webhook(content=content)
 
