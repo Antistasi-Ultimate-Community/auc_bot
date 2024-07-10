@@ -6,6 +6,7 @@ from handle_message_github import return_pull
 
 from config import guild_channel_bot
 from config import grab_exempt_channels
+from config import guild_user_webhook_id
 
 from webhooks import recieve_webhook
 
@@ -41,7 +42,7 @@ def handle_message(client):
         if (content == "" or content == None):
             return False
 
-        if (author_id == 1256738636364517426):
+        if (author_id == guild_user_webhook_id):
             print(f"Webhook recieved from {author_name}")
             recieve_webhook(content=content)
 

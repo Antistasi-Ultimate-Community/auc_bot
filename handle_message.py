@@ -28,10 +28,19 @@ def identifier_github(content=None):
     pull_index_filter = content.split(" ")
     
     # Filter the resulting list to remove any elements that don't have the identifier
-    index = [index for index in pull_index_filter if "##" in index][0]
-    
-    pull_index = index.split("##")[1]
+    index = [index for index in pull_index_filter if "##" in index]
 
-    url = return_pull(pull_index=pull_index)
+    if (len(index) == 1):
+        index = index[0]
+        pull_index = index.split("##")[1]
+        url = return_pull(pull_index=pull_index)
+    else:
+        urls = ""
+        for pull_index in index:
+            pull_index = pull_index.split("##")[1]
+            url = return_pull(pull_index=pull_index)
+            urls = f"{urls}\n{url}"
+
+        url = urls
 
     return url

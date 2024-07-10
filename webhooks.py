@@ -6,6 +6,8 @@ def recieve_webhook(content=None):
     if (content == None):
         raise Exception("Retrieved webhook with no content.")
 
+    print(content)
+
     payload_filter = content.replace("\n", "")
     payload_filter = payload_filter.replace(" ", "")
 

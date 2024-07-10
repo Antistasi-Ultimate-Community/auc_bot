@@ -63,8 +63,10 @@ guild_git_repo_bot = f"{git_repo_base}/Antistasi-Ultimate-Community/auc_bot"
 
 if (debug):
     guild_git_repo = guild_git_repo_debug
+    guild_user_webhook_id = 1257005684185366579
 else:
     guild_git_repo = guild_git_repo_normal
+    guild_user_webhook_id = 1256738636364517426
 
 pull_request_template = """
 ## What type of PR is this?
