@@ -30,6 +30,11 @@ def identifier_github(content=None):
     # Filter the resulting list to remove any elements that don't have the identifier
     index = [index for index in pull_index_filter if "##" in index]
 
+    print(index)
+
+    if (index[0] in ["#", "##", "###"]):
+        return
+
     if (len(index) == 1):
         index = index[0]
         pull_index = index.split("##")[1]

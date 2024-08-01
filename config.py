@@ -44,8 +44,8 @@ if (debug):
 else:
     #NORMAL
     guild_id = discord.Object(817005365740044289)
-    guild_roles_admin = [817012725183807509] # Admin
-    guild_roles_moderator = guild_roles_admin + [1246558470082134098, 817012746608443412, 1143194227187122208, 1016040774581882950] # Head Moderator, Moderator, Staff, Dev
+    guild_roles_admin = [817012725183807509, 1246558470082134098] # Admin, Head Moderator
+    guild_roles_moderator = guild_roles_admin + [817012746608443412, 1143194227187122208, 1016040774581882950] # Moderator, Staff, Dev
     guild_roles_log_exempt = guild_roles_moderator + [1151867794418311209, 1218816913107451984, 1241819466371960836] # Dev Helper, Texture Dev, AUC
     guild_channel_log_exempt = [817005366189621279]
     guild_channel_bot = 1255143679929090098
