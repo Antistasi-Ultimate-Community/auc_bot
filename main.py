@@ -24,6 +24,10 @@ from commands import commands_init
 
 from config import git_client
 
+from steam_server import grab_server
+
+import asyncio
+
 # import signal
 # import sys
 
@@ -41,6 +45,24 @@ intents.message_content = True
 # signal.signal(signal.SIGINT, signal_handler)
 
 # May be useful in future ^
+
+async def presence_loop(client):
+    print("Starting presence loop.")
+    while (True):
+
+        print("Setting new presence.")
+        
+        server = grab_server()
+
+        server_info = server[0]
+        server_name = server_info.server_name
+
+        player_count = server_info.player_count
+        player_count_max = server_info.max_players
+
+        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name=f"{server_name}: {player_count}/{player_count_max}")) # {server_name} with {player_count} other players.
+
+        await asyncio.sleep(300) # 5 mins
 
 class aclient(discord.Client):
     def __init__(self):
@@ -60,11 +82,12 @@ class aclient(discord.Client):
         except:
             log_message(-1, ("Something went wrong!"))
         
+        client.loop.create_task(presence_loop(client))
+        
 client = aclient()
 tree = commands_init(client)
 
 handle_message(client)
-
 client.run(token, log_handler=handler)
 
 git_client.close()
