@@ -42,7 +42,7 @@ def handle_message(client):
         if (content == "" or content == None):
             return False
 
-        if (author_id == guild_user_webhook_id):
+        if (author_id in [guild_user_webhook_id, 474144080801169418]):
             print(f"Webhook recieved from {author_name}")
             recieve_webhook(content=content)
 
