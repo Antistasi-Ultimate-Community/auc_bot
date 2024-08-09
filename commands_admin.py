@@ -24,7 +24,7 @@ from handle_git import merge_pull
 from handle_git import merge_pulls
 from handle_git import update_branch
 
-from handle_git_cmd import update_bot
+from handle_git_cmd import restart_bot
 
 from log import log_message
 
@@ -142,9 +142,9 @@ def commands_admin(client, tree):
             message = send_message(interaction=interaction, message=f"Shutdown was not confirmed.", local=True)
             await message
             
-    @tree.command(name="restart_bot", description="Restarts the bot, will fetch `main` from github first.", guild=guild_id)
+    @tree.command(name="restart_bot", description="Restarts the bot.", guild=guild_id)
     @app_commands.check(is_admin)
-    async def restart_bot(interaction: discord.Interaction, confirm: bool):
+    async def restart_bot(interaction: discord.Interaction, confirm: bool, pull: bool = False):
         if (confirm):
             log_message(-1, (f"{interaction.user.display_name} ({interaction.user.id}) is attempting restart."), header=guild_log_init, space=True)
             message = send_message(interaction=interaction, message=f"Restarting the bot now.", local=False)
@@ -152,7 +152,7 @@ def commands_admin(client, tree):
 
             # await shutdown(client)
 
-            update_bot(client)
+            restart_bot(client=client, pull=pull)
         else:
             message = send_message(interaction=interaction, message=f"Shutdown was not confirmed.", local=True)
             await message

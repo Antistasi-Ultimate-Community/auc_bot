@@ -31,11 +31,12 @@ def git_pull(repository=""):
 
     print(output)
 
-def update_bot(client):
+def restart_bot(client, pull=False):
 
-    git_pull(guild_git_repo_bot)
+    if (pull):
+        git_pull(guild_git_repo_bot)
 
-    install_libraries("requirements.txt")
+        install_libraries("requirements.txt")
 
     os.execl(sys.executable, "python", "main.py")
 
