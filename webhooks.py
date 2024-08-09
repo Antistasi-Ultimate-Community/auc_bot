@@ -2,11 +2,9 @@ from ast import literal_eval
 
 import handle_json
 
-def recieve_webhook(content=None, payload_type=None):
+def recieve_webhook(content=None, payload_type=None, author_id=None):
     if (content == None):
         raise Exception("Retrieved webhook with no content.")
-
-    print(content)
 
     payload_filter = content.replace("\n", "")
     payload_filter = payload_filter.replace(" ", "")
@@ -14,13 +12,19 @@ def recieve_webhook(content=None, payload_type=None):
     payload = payload_filter.split("+")
     payload = [index for index in payload if index != ""]
 
+    if (author_id == 474144080801169418):
+        if ("webhook" not in payload):
+            return
+        else:
+            payload.remove("webhook")
+
     ## use for pythia formatted webhook
     # payload_type = payload[0]
     # payload.remove(payload_type)
 
-    payload_final = handle_payload(payload=payload, payload_type=payload_type)
+    handle_payload(payload=payload, payload_type=payload_type)
 
-    return [payload, payload_type, payload_final]
+    return [payload, payload_type]
 
 def handle_payload(payload=None, payload_type=None):
     if (payload == None):
@@ -63,5 +67,3 @@ def handle_payload(payload=None, payload_type=None):
     #         }
 
     #         handle_json.update_json(data=user, file_name="members")
-
-    print(payload_final)

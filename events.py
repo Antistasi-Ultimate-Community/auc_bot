@@ -44,7 +44,8 @@ def handle_message(client):
 
         if (author_id in [guild_user_webhook_id, 474144080801169418]):
             print(f"Webhook recieved from {author_name}")
-            recieve_webhook(content=content)
+
+            recieve_webhook(content=content, author_id=author_id)
 
         if (identifier_is_github(content=content)):
             reply = identifier_github(content=content)
