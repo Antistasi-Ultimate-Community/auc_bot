@@ -47,10 +47,10 @@ intents.message_content = True
 # May be useful in future ^
 
 async def presence_loop(client):
-    print("Starting presence loop.")
+    log_message(-1, "Starting presence loop.")
     while (True):
 
-        print("Setting new presence.")
+        log_message(-1, "Setting new presence.")
         
         server = grab_server()
 
