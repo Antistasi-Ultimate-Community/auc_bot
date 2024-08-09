@@ -15,6 +15,7 @@ from config import guild_name_bot
 from config import guild_roles_admin
 from config import guild_roles_moderator
 from config import guild_roles_log_exempt
+from config import guild_channel_player_count
 
 from events import handle_message
 
@@ -48,6 +49,7 @@ intents.message_content = True
 
 async def presence_loop(client):
     log_message(-1, "Starting presence loop.")
+    channel_player = client.get_channel(guild_channel_player_count)
     while (True):
 
         log_message(-1, "Setting new presence.")
@@ -57,10 +59,22 @@ async def presence_loop(client):
         server_info = server[0]
         server_name = server_info.server_name
 
+        if (server_name == "Antistasi Ultimate Community Server 3"):
+            server_name = "AUC Server 3"
+
+        if (server_name == "Antistasi Ultimate Community Server 2"):
+            server_name = "AUC Server 2"
+
+        if (server_name == "Antistasi Ultimate Community Server 1"):
+            server_name = "AUC Server 1"
+
         player_count = server_info.player_count
         player_count_max = server_info.max_players
 
-        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name=f"{server_name}: {player_count}/{player_count_max}")) # {server_name} with {player_count} other players.
+        player_count_formatted = f"{server_name}: {player_count}/{player_count_max}"
+
+        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name=player_count_formatted)) # {server_name} with {player_count} other players.
+        await channel_player.edit(name=player_count_formatted)
 
         await asyncio.sleep(300) # 5 mins
 

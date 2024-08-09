@@ -40,6 +40,7 @@ if (debug):
     guild_roles_log_exempt = guild_roles_moderator + []
     guild_channel_log_exempt = [599612914567086091]
     guild_channel_bot = 1255143195097043005
+    guild_channel_player_count = 599612914567086090
     guild_name_bot = "AUC"
 else:
     #NORMAL
@@ -49,6 +50,7 @@ else:
     guild_roles_log_exempt = guild_roles_moderator + [1151867794418311209, 1218816913107451984, 1241819466371960836] # Dev Helper, Texture Dev, AUC
     guild_channel_log_exempt = [817005366189621279]
     guild_channel_bot = 1255143679929090098
+    guild_channel_player_count = 1271540836265627771
     guild_name_bot = "AUC"
 
 guild_log_file = f"logs/{day}_{time}-discord.log"
