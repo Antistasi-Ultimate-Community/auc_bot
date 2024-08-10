@@ -45,13 +45,15 @@ def commands_init(client):
         await message
 
     @tree.command(name="map_image", description="Sends a 1024x1024 image of a map.", guild=guild_id)
-    async def map_image(interaction: discord.Interaction, map_name: str = "", local: bool = True):
+    async def map_image(interaction: discord.Interaction, map_name: str, local: bool = True):
 
-        map_file = discord.File(f"images/maps/{map_name}.jpg")
+        map_name_formatted = f"{map_name}.jpg"
+
+        map_file = discord.File(f"images/maps/{map_name_formatted}")
 
         embed = format_embed(interaction=interaction, title=map_name, description=None)
-        embed.set_image(url=f"attachment://{map_name}.jpg")
-        
+        embed.set_image(url=f"attachment://{map_name_formatted}")
+
         message = interaction.response.send_message(file=map_file, embed=embed, ephemeral=local)
         await message
 
