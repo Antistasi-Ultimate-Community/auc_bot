@@ -44,8 +44,20 @@ def commands_init(client):
         # message = send_message(interaction=interaction, message=modset_message, local=False)
         await message
 
+    @tree.command(name="map_image", description="Sends a 1024x1024 image of a map.", guild=guild_id)
+    async def map_image(interaction: discord.Interaction, map_name: str = "", local: bool = True):
+
+        map_file = discord.File(f"images/maps/{map_name}.jpg")
+
+        embed = format_embed(interaction=interaction, title=map_name, description=None)
+        embed.set_image(url=f"attachment://{map_name}.jpg")
+        
+        message = interaction.response.send_message(file=map_file, embed=embed, ephemeral=local)
+        await message
+
     @generate_modset_help.error
     @generate_modset.error
+    @map_image.error
     async def say_error(interaction : discord.Interaction, error):
         await send_message(interaction, error, local=True)
 
