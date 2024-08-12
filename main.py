@@ -27,6 +27,9 @@ from config import git_client
 
 from steam_server import grab_server
 
+from presence import presence_loop
+from presence import presence_loop_thread
+
 import asyncio
 
 # import signal
@@ -47,37 +50,6 @@ intents.message_content = True
 
 # May be useful in future ^
 
-async def presence_loop(client):
-    log_message(-1, "Starting presence loop.")
-    channel_player = client.get_channel(guild_channel_player_count)
-    while (True):
-
-        log_message(-1, "Setting new presence.")
-        
-        server = grab_server()
-
-        server_info = server[0]
-        server_name = server_info.server_name
-
-        if (server_name == "Antistasi Ultimate Community Server 3"):
-            server_name = "AUC Server 3"
-
-        if (server_name == "Antistasi Ultimate Community Server 2"):
-            server_name = "AUC Server 2"
-
-        if (server_name == "Antistasi Ultimate Community Server 1"):
-            server_name = "AUC Server 1"
-
-        player_count = server_info.player_count
-        player_count_max = server_info.max_players
-
-        player_count_formatted = f"{server_name}: {player_count}/{player_count_max}"
-
-        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name=player_count_formatted)) # {server_name} with {player_count} other players.
-        await channel_player.edit(name=player_count_formatted)
-
-        await asyncio.sleep(300) # 5 mins
-
 class aclient(discord.Client):
     def __init__(self):
         super().__init__(intents=intents)
@@ -95,8 +67,8 @@ class aclient(discord.Client):
                 self.synced = True
         except:
             log_message(-1, ("Something went wrong!"))
-        
-        client.loop.create_task(presence_loop(client))
+
+        await asyncio.create_task(presence_loop(client=client))
         
 client = aclient()
 tree = commands_init(client)
