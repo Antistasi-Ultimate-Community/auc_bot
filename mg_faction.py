@@ -137,7 +137,7 @@ def grab_modset_data(modset, modset_dict):
 def grab_modset(modset=""):
     if (modset == ""):
 
-        setting_modsets = read_json_return("settings", "modsets")
+        setting_modsets = read_json_return("auc_settings", "modsets")
 
         if (setting_modsets == "random"):
             modset = modset_factions.grab_random_modset("modsets", "modsets", random_modset=setting_modsets)

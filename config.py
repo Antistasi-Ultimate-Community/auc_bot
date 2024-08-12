@@ -9,8 +9,6 @@ from datetime import datetime
 
 from main_git import start_git_client
 
-import os
-
 # Need to convert most of the variables in this file to json, that way we can add/remove during runtime
 
 def guild_day_time(type="", type_format=""):
@@ -53,7 +51,7 @@ else:
     guild_channel_player_count = 1271540836265627771
     guild_name_bot = "AUC"
 
-guild_log_file = f"logs/{day}_{time}-discord.log"
+guild_log_file = f"logs/{guild_name_bot}_{day}_{time}-discord.log"
 guild_log_init = f"Bot initialization"
 guild_log_copyright = f"Copyright © 2023 - 2024 Antistasi Ultimate All Rights Reserved"
 

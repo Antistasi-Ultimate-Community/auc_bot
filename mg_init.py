@@ -1,5 +1,3 @@
-import os
-
 from handle_json import read_json_return
 from handle_json import read_json_return_dict
 
@@ -32,7 +30,6 @@ def grab_collections(modsets=[""]):
     return collections
 
 def init(modsets=[""], climates=["all"], era="", key="", dlc=[""], double_occ=0, simple=False):
-    # os.system('cls')
     log_message(-1, guild_log_modset_init_start, space=True)
 
     if (climates == ["all"] or climates == [""]):
@@ -41,7 +38,7 @@ def init(modsets=[""], climates=["all"], era="", key="", dlc=[""], double_occ=0,
     if (dlc == [""]):
         dlc = all_dlc
 
-    setting_choices = read_json_return("settings", "choices")
+    setting_choices = read_json_return("auc_settings", "choices")
 
     if (modsets == [""] or modsets[0] == "all"):
         modset = all_modsets

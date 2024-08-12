@@ -1,7 +1,4 @@
 import json
-import os
-
-path = os.getcwd()
 
 def validate_key(dict, key, value_default):
 
@@ -10,7 +7,7 @@ def validate_key(dict, key, value_default):
 
 def read_json_return_dict(file_name, key="", value_default="default_return"):
     
-    with open(f'{path}/json/{file_name}.json', 'r') as file:
+    with open(f'json/{file_name}.json', 'r') as file:
 
         read_file = file.read()
         dict = json.loads(read_file)
@@ -43,11 +40,11 @@ def read_json_return_dict(file_name, key="", value_default="default_return"):
 
 def save_json(data, file_name):
 
-    with open(f'{path}/json/{file_name}.json', 'w+') as file:
+    with open(f'json/{file_name}.json', 'w+') as file:
         json.dump(data, file, indent=4)
 
 def read_json(file_name):
-    with open(f'{path}/json/{file_name}.json', 'r') as file:
+    with open(f'json/{file_name}.json', 'r') as file:
         y = json.load(file)
 
     return y
@@ -60,7 +57,7 @@ def read_json_return(file_name, data):
 
     else:
 
-        with open(f'{path}/json/{file_name}.json', 'r') as file:
+        with open(f'json/{file_name}.json', 'r') as file:
             x = json.load(file)
 
     if (data not in x):
@@ -76,7 +73,7 @@ def update_json(data, file_name):
 
     try:
 
-        with open(f'{path}/json/{file_name}.json', 'r') as file:
+        with open(f'json/{file_name}.json', 'r') as file:
             y = json.load(file)
 
         y.update(data)
