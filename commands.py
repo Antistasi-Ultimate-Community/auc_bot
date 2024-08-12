@@ -45,7 +45,7 @@ def commands_init(client):
         await message
 
     @tree.command(name="map_image", description="Sends a 1024x1024 image of a map.", guild=guild_id)
-    async def map_image(interaction: discord.Interaction, map_name: str, local: bool = True):
+    async def map_image(interaction: discord.Interaction, map_name: str, local: bool = False):
 
         map_name_formatted = f"{map_name}.jpg"
 
