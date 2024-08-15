@@ -1,0 +1,314 @@
+{
+  "Altis": {
+    "map_name": "Antistasi_Altis.Altis",
+    "climates": ["arid"],
+    "image": "altis.jpg",
+    "id": "https://store.steampowered.com/app/107410/Arma_3/"
+  },
+  "Anizay": {
+    "map_name": "Antistasi_tem_anizay.tem_anizay",
+    "climates": ["arid"],
+    "image": "anizay.jpg",
+    "id": "1537973181"
+  },
+  "Cam Lao Nam": {
+    "map_name": "Antistasi_cam_lao_nam.cam_lao_nam",
+    "climates": ["tropical"],
+    "image": "cam_lao_nam.jpg",
+    "id": "https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/"
+  },
+  "Chernarus (2020)": {
+    "map_name": "Antistasi_cup_chernarus_A3.cup_chernarus_A3",
+    "climates": ["temperate"],
+    "image": "cheranrus_2020.jpg",
+    "id": "1981964169"
+  },
+  "Chernarus (Autumn)": {
+    "map_name": "Antistasi_chernarus.chernarus",
+    "climates": ["temperate"],
+    "image": "charnarus.jpg",
+    "id": "583544987"
+  },
+  "Chernarus (Summer)": {
+    "map_name": "Antistasi_chernarus_summer.chernarus_summer",
+    "climates": ["temperate"],
+    "image": "charnarus_summer.jpg",
+    "id": "583544987"
+  },
+  "Chernarus (Winter)": {
+    "map_name": "Antistasi_chernarus_winter.chernarus_winter",
+    "climates": ["arctic"],
+    "image": "charnarus_winter.jpg",
+    "id": "583544987"
+  },
+  "Green Sea Terrain": {
+    "map_name": "Antistasi_green_sea.green_sea",
+    "climates": ["temperate"],
+    "image": "green_sea.jpg",
+    "id": "2645015212"
+  },
+  "Esseker": {
+    "map_name": "Antistasi_Esseker.Esseker",
+    "climates": ["temperate"],
+    "image": "esseker.jpg",
+    "id": "498101407"
+  },
+  "G.O.S Al Rayak": {
+    "map_name": "Antistasi_pja310.pja310",
+    "climates": ["arid"],
+    "image": "pja310.jpg",
+    "id": "648172507"
+  },
+  "Gabreta": {
+    "map_name": "Antistasi_stozec.stozec",
+    "climates": ["temperate"],
+    "image": "gabreta.jpg",
+    "id": "csla"
+  },
+  "Gulfcoast Islands": {
+    "map_name": "Antistasi_Gulfcoast.Gulfcoast",
+    "climates": ["temperate"],
+    "image": "gulfcoast.jpg",
+    "id": "1617004814"
+  },
+  "Isla Abramia": {
+    "map_name": "Antistasi_abramia.abramia",
+    "climates": ["temperate"],
+    "image": "abramia.jpg",
+    "id": "648775794"
+  },
+  "Island Panthera": {
+    "map_name": "Antistasi_Panthera3.Panthera3",
+    "climates": ["temperate"],
+    "image": "panthera.jpg",
+    "id": "708278910"
+  },
+  "Island Panthera (Winter)": {
+    "map_name": "Antistasi_Winthera3.Winthera3",
+    "climates": ["arctic"],
+    "image": "winthera.jpg",
+    "id": "708278910"
+  },
+  "Khe Sahn": {
+    "map_name": "Antistasi_vn_khe_sanh.vn_khe_sanh",
+    "climates": ["tropical"],
+    "image": "khe.jpg",
+    "id": "https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/"
+  },
+  "Kujari": {
+    "map_name": "Antistasi_tem_kujari.tem_kujari",
+    "climates": ["arid"],
+    "image": "kujari.jpg",
+    "id": "1726494027"
+  },
+  "Kunduz": {
+    "map_name": "Antistasi_Kunduz.Kunduz",
+    "climates": ["arid", "temperate"],
+    "image": "kunduz.jpg",
+    "id": "421620913"
+  },
+  "Lingor": {
+    "map_name": "Antistasi_lingor3.lingor3",
+    "climates": ["tropical"],
+    "image": "lingor.jpg",
+    "id": "718649903"
+  },
+  "Livonia": {
+    "map_name": "Antistasi_Enoch.Enoch",
+    "climates": ["temperate"],
+    "image": "livonia.jpg",
+    "id": "https://store.steampowered.com/app/1021790/Arma_3_Contact/"
+  },
+  "Lythium": {
+    "map_name": "Antistasi_Lythium.Lythium",
+    "climates": ["arid"],
+    "image": "lythium.jpg",
+    "id": "909547724"
+  },
+  "Madrigal": {
+    "map_name": "Antistasi_OPTRE_Madrigal.OPTRE_Madrigal",
+    "climates": ["temperate"],
+    "image": "madrigal.jpg",
+    "id": "769440155"
+  },
+  "Malden": {
+    "map_name": "Antistasi_Malden.Malden",
+    "climates": ["arid"],
+    "image": "malden.jpg",
+    "id": "https://store.steampowered.com/app/639600/Arma_3_Malden/"
+  },
+  "Mortain": {
+    "map_name": "Antistasi_SPE_Mortain.SPE_Mortain",
+    "climates": ["temperate"],
+    "image": "placeholder.jpg",
+    "id": "https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/"
+  },
+  "Namalsk": {
+    "map_name": "Antistasi_namalsk.namalsk",
+    "climates": ["temperate"],
+    "image": "namalsk.jpg",
+    "id": "3013966707"
+  },
+  "Napf Island": {
+    "map_name": "Antistasi_Napf.Napf",
+    "climates": ["temperate"],
+    "image": "napf.jpg",
+    "id": "1425442364"
+  },
+  "Napf Winter Island": {
+    "map_name": "Antistasi_NapfWinter.NapfWinter",
+    "climates": ["arctic"],
+    "image": "napf_winter.jpg",
+    "id": "1969191445"
+  },
+  "New Esseker": {
+    "map_name": "Antistasi_Esseker.Esseker",
+    "climates": ["temperate"],
+    "image": "esseker.jpg",
+    "id": "2712204589"
+  },
+  "Normandy": {
+    "map_name": "Antistasi_SPE_Normandy.SPE_Normandy",
+    "climates": ["temperate"],
+    "image": "normandy.jpg",
+    "id": "https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/"
+  },
+  "Omaha Beach": {
+    "map_name": "Antistasi_WW2_Omaha_Beach.WW2_Omaha_Beach",
+    "climates": ["temperate"],
+    "image": "omaha_beach.jpg",
+    "id": "2993515557"
+  },
+  "Phouc Tuy Province": {
+    "map_name": "Antistasi_psyfx_pht.psyfx_pht",
+    "climates": ["tropical"],
+    "image": "phuoc_tuy.jpg",
+    "id": "943001311"
+  },
+  "Prei Khmaoch Luong": {
+    "map_name": "Antistasi_rhspkl.rhspkl",
+    "climates": ["tropical"],
+    "image": "rhspkl.jpg",
+    "id": "1978754337"
+  },
+  "Ruha": {
+    "map_name": "Antistasi_ruha.ruha",
+    "climates": ["temperate"],
+    "image": "ruha.jpg",
+    "id": "1368857262"
+  },
+  "Sahrani": {
+    "map_name": "Antistasi_sara.sara",
+    "climates": ["arid"],
+    "image": "sara.jpg",
+    "id": "583544987"
+  },
+  "Saint Kapaulio": {
+    "map_name": "Antistasi_Kapaulio.Kapaulio",
+    "climates": ["temperate"],
+    "image": "kapaulio.jpg",
+    "id": "939686262"
+  },
+  "Sefrou-Ramal": {
+    "map_name": "Antistasi_SefrouRamal.SefrouRamal",
+    "climates": ["arid"],
+    "image": "ramal.jpg",
+    "id": "https://store.steampowered.com/app/1681170/Arma_3_Creator_DLC_Western_Sahara/"
+  },
+  "Sehreno": {
+    "map_name": "Antistasi_Sehreno.Sehreno",
+    "climates": ["temperate"],
+    "image": "sehreno.jpg",
+    "id": "2876540929"
+  },
+  "Staszow": {
+    "map_name": "Antistasi_Staszow.Staszow",
+    "climates": ["temperate"],
+    "image": "staszow.jpg",
+    "id": "2648308937"
+  },
+  "Staszow (Winter)": {
+    "map_name": "Antistasi_StaszowWinter.StaszowWinter",
+    "climates": ["arctic"],
+    "image": "staszow_winter.jpg",
+    "id": "2648308937"
+  },
+  "Stratis (Debug Only)": {
+    "map_name": "Antistasi_Stratis.Stratis",
+    "climates": ["arid"],
+    "image": "stratis.jpg",
+    "id": "https://store.steampowered.com/app/107410/Arma_3/"
+  },
+  "Sumava": {
+    "map_name": "Antistasi_brf_sumava.brf_sumava",
+    "climates": ["temperate"],
+    "image": "sumava.jpg",
+    "id": "2947655994"
+  },
+  "Takistan": {
+    "map_name": "Antistasi_takistan.takistan",
+    "climates": ["arid"],
+    "image": "takistan.jpg",
+    "id": "583544987"
+  },
+  "Tanoa": {
+    "map_name": "Antistasi_Tanoa.Tanoa",
+    "climates": ["tropical"],
+    "image": "tanoa.jpg",
+    "id": "https://store.steampowered.com/app/395180/Arma_3_Apex/"
+  },
+  "Tembelan Island": {
+    "map_name": "Antistasi_Tembelan.Tembelan",
+    "climates": ["arid"],
+    "image": "tembelan.jpg",
+    "id": "1252091296"
+  },
+  "Tobruk": {
+    "map_name": "Antistasi_iron_excelsior_Tobruk.iron_excelsior_Tobruk",
+    "climates": ["arid"],
+    "image": "tobruk.jpg",
+    "id": "2648308937"
+  },
+  "UMB Colombia": {
+    "map_name": "Antistasi_UMB_Colombia.UMB_Colombia",
+    "climates": ["tropical"],
+    "image": "colombia.jpg",
+    "id": "2266710560"
+  },
+  "Utah Beach": {
+    "map_name": "Antistasi_spex_utah_beach.spex_utah_beach",
+    "climates": ["temperate"],
+    "image": "utah_beach.jpg",
+    "id": "3117898674"
+  },
+  "Vidda": {
+    "map_name": "Antistasi_blud_vidda.blud_vidda",
+    "climates": ["arctic"],
+    "image": "vidda.jpg",
+    "id": "1282716647"
+  },
+  "Virolahti": {
+    "map_name": "Antistasi_vt7.vt7",
+    "climates": ["temperate"],
+    "image": "virolahti.jpg",
+    "id": "1926513010"
+  },
+  "Weferlingen": {
+    "map_name": "Antistasi_gm_weferlingen_summer.gm_weferlingen_summer",
+    "climates": ["temperate"],
+    "image": "weferlingen.jpg",
+    "id": "https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/"
+  },
+  "Weferlingen (Winter)": {
+    "map_name": "Antistasi_gm_weferlingen_winter.gm_weferlingen_winter",
+    "climates": ["arctic"],
+    "image": "weferlingen_winter.jpg",
+    "id": "https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/"
+  },
+  "Yulakia": {
+    "map_name": "Antistasi_yulakia.yulakia",
+    "climates": ["arid", "temperate"],
+    "image": "yulakia.jpg",
+    "id": "2950257727"
+  }
+}

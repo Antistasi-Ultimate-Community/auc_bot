@@ -66,7 +66,7 @@ if (debug):
     guild_user_webhook_id = 1257005684185366579
 else:
     guild_git_repo = guild_git_repo_normal
-    guild_user_webhook_id = 1255143679929090098
+    guild_user_webhook_id = 1271150710343340103
 
 pull_request_template = """
 ## What type of PR is this?
