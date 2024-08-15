@@ -11,7 +11,7 @@ from config import guild_id
 from log import log_message
 
 from mg_init import init
-from mg_map import return_map, grab_map_names, grab_maps, link_to_map
+from mg_map import return_map, grab_map_names, grab_maps, link_to_map, map_to_embed
 
 from typing import Literal
 
@@ -45,27 +45,6 @@ def commands_init(client):
 
         # move this to its own function and do basically the same thing as factions, validate climates etc and return accordingly
         map_file = None
-        # if (map_name != ""):
-        #     map_returned = return_map(map_name=map_name)
-        #     map_image = map_returned[1]
-        #     map_climates = map_returned[2]
-        #     map_climates_string = "\n".join(map_climates)
-        #     map_scenario = map_returned[3]
-        #     map_id = map_returned[4]
-
-        #     if ("http" in map_id):
-        #         map_link = f"{map_id}"
-        #     else:
-        #         map_link = f"https://steamcommunity.com/sharedfiles/filedetails/?id={map_id}"
-
-        #     map_file = discord.File(f"images/maps/{map_image}")
-        #     map_description = f"Map Climates: {map_climates_string}\n\n[Workshop Link](<{map_link}>)"
-
-        #     map_embed = format_embed(interaction=interaction, title="Modset Generator - Map", description=map_description)
-        #     map_embed.set_image(url=f"attachment://{map_image}")
-        #     map_embed.set_footer(text=map_scenario)
-
-        #     embeds.append(map_embed)
         
         if (map_file == None):
             message = interaction.response.send_message(embeds=embeds, ephemeral=local)
@@ -75,43 +54,40 @@ def commands_init(client):
         await message
 
     @tree.command(name="map", description="Sends a 1024x1024 image of a map. You can use a steam workshop link instead of a name.", guild=guild_id)
-    async def map(interaction: discord.Interaction, map_name: str, local: bool = False):
+    async def map(interaction: discord.Interaction, map_name: str, local: bool = True):
 
         if ("http" in map_name):
             map_name = link_to_map(map_name)
         
-        if ("Multiple" not in map_name):
+        if (type(map_name) is not list):
             # move this to its own function
-            map_returned = return_map(map_name=map_name)
-            map_image = map_returned[1]
-            map_climates = map_returned[2]
-            map_climates_string = "\n".join(map_climates)
-            map_scenario = map_returned[3]
-            map_id = map_returned[4]
+            map_return = map_to_embed(map_name, interaction)
 
-            if ("http" in map_id):
-                map_link = f"{map_id}"
-            else:
-                map_link = f"https://steamcommunity.com/sharedfiles/filedetails/?id={map_id}"
+            map_file = map_return[0]
+            embed = map_return[1]
 
-            map_file = discord.File(f"images/maps/{map_image}")
-            map_description = f"Map Climates: {map_climates_string}\n\n[Workshop Link](<{map_link}>)"
-
-            embed = format_embed(interaction=interaction, title=map_name, description=map_description)
-            embed.set_image(url=f"attachment://{map_image}")
-            embed.set_footer(text=map_scenario)
-                
             message = interaction.response.send_message(file=map_file, embed=embed, ephemeral=local)
-
         else:
-            embed = format_embed(interaction=interaction, title="Multiple Maps!", description=map_name)
+            embeds = []
+            map_files = []
 
-            message = interaction.response.send_message(embed=embed, ephemeral=local)
+            map_names = map_name
+            for map_name in map_names:
+
+                map_return = map_to_embed(map_name, interaction)
+
+                map_file = map_return[0]
+                embed = map_return[1]
+
+                map_files.append(map_file)
+                embeds.append(embed)
+
+            message = interaction.response.send_message(files=map_files, embeds=embeds, ephemeral=local)
 
         await message
 
     @tree.command(name="maps", description="Sends a list of supported map names.", guild=guild_id)
-    async def maps(interaction: discord.Interaction, local: bool = False):
+    async def maps(interaction: discord.Interaction, local: bool = True):
         
         map_names = grab_map_names()
 

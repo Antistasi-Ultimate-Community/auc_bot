@@ -1,4 +1,28 @@
 from handle_json import read_json_return_dict
+from web import format_embed
+import discord
+
+def map_to_embed(map_name, interaction):
+    map_returned = return_map(map_name=map_name)
+    map_image = map_returned[1]
+    map_climates = map_returned[2]
+    map_climates_string = "\n".join(map_climates)
+    map_scenario = map_returned[3]
+    map_id = map_returned[4]
+
+    if ("http" in map_id):
+        map_link = f"{map_id}"
+    else:
+        map_link = f"https://steamcommunity.com/sharedfiles/filedetails/?id={map_id}"
+
+    map_file = discord.File(f"images/maps/{map_image}")
+    map_description = f"Map Climates: {map_climates_string}\n\n[Workshop Link](<{map_link}>)"
+
+    embed = format_embed(interaction=interaction, title=map_name, description=map_description)
+    embed.set_image(url=f"attachment://{map_image}")
+    embed.set_footer(text=map_scenario)
+        
+    return [map_file, embed]
 
 def link_to_map(map_name):
     # Splits to id&searchtext
@@ -23,10 +47,7 @@ def link_to_map(map_name):
     if (len(map_name) == 1):
         map_name = map_name[0]
     else:
-        map_links = "\n".join(map_name)
-        map_name_new = f"Multiple maps use this link. Unable to display an image!\n{map_links}"
-
-        map_name = map_name_new
+        map_name = map_name
 
     return map_name
 

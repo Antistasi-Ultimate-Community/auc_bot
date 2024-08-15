@@ -26,19 +26,19 @@
   "Chernarus (Autumn)": {
     "map_name": "Antistasi_chernarus.chernarus",
     "climates": ["temperate"],
-    "image": "charnarus.jpg",
+    "image": "chernarus.jpg",
     "id": "583544987"
   },
   "Chernarus (Summer)": {
     "map_name": "Antistasi_chernarus_summer.chernarus_summer",
     "climates": ["temperate"],
-    "image": "charnarus_summer.jpg",
+    "image": "chernarus_summer.jpg",
     "id": "583544987"
   },
   "Chernarus (Winter)": {
     "map_name": "Antistasi_chernarus_winter.chernarus_winter",
     "climates": ["arctic"],
-    "image": "charnarus_winter.jpg",
+    "image": "chernarus_winter.jpg",
     "id": "583544987"
   },
   "Green Sea Terrain": {
