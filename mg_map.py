@@ -16,7 +16,7 @@ def map_to_embed(map_name, interaction):
         map_link = f"https://steamcommunity.com/sharedfiles/filedetails/?id={map_id}"
 
     map_file = discord.File(f"images/maps/{map_image}")
-    map_description = f"Map Climates: {map_climates_string}\n\n[Workshop Link](<{map_link}>)"
+    map_description = f"Map Climates: {map_climates_string}\n\n[Map Link](<{map_link}>)"
 
     embed = format_embed(interaction=interaction, title=map_name, description=map_description)
     embed.set_image(url=f"attachment://{map_image}")

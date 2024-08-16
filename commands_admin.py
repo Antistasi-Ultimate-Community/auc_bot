@@ -37,7 +37,7 @@ class changelog_modal(ui.Modal):
         self.mod_type = mod_type
         super().__init__(title='Changelog Form')
 
-    version_textinput = ui.TextInput(label="Version", default="10.0.0")
+    version_textinput = ui.TextInput(label="Version", default="11.0.0")
     changelog_url_textinput = ui.TextInput(label="Changelog URL", default="https://antistasiultimate.com")
     changelog_textinput = ui.TextInput(label="Changelog", style=discord.TextStyle.paragraph, default="This is a changelog!", max_length=930)
 
@@ -47,6 +47,13 @@ class changelog_modal(ui.Modal):
 
 def commands_admin(client, tree):
     
+    @tree.command(name="sync_tree", description="Syncs the command tree.", guild=guild_id)
+    @app_commands.check(is_admin)
+    async def sync_tree(interaction: discord.Interaction):
+        await tree.sync(guild=guild_id)
+
+        await interaction.response.send_message(f"Synced commands.")
+
     # need to implement an optional "repository" argument for each "git_" command
     @tree.command(name="git_list", description="Lists open issues/pull requests.", guild=guild_id)
     @app_commands.check(is_admin)
@@ -168,6 +175,7 @@ def commands_admin(client, tree):
     async def send_latest_log(interaction: discord.Interaction):
         await send_log(client, interaction=interaction)
 
+    @sync_tree.error
     @git_list.error
     @git_branch_update.error
     @git_pull_merge_ready.error

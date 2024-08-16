@@ -25,13 +25,17 @@ def commands_init(client):
     commands_admin(client, tree)
     commands_moderator(client, tree)
 
-    @tree.command(name="generate_modset_help", description="Shows all of the parameters for generate_modset.", guild=guild_id)
+    @tree.command(name="generate_modset_help", description="Shows all of the parameters for generate_modset.")
+    @app_commands.allowed_installs(guilds=True, users=True)
+    @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
     async def generate_modset_help(interaction: discord.Interaction):
         help_message = "# USE A COMMA (,) BETWEEN EACH PARAMETER, AND DON'T USE SPACES.\nhttps://github.com/Antistasi-Ultimate-Community/auc_bot/wiki/Modset-Generator"
         message = send_message(interaction=interaction, message=help_message, local=True)
         await message
 
-    @tree.command(name="generate_modset", description="Generates a modset with given parameters.", guild=guild_id)
+    @tree.command(name="generate_modset", description="Generates a modset with given parameters.")
+    @app_commands.allowed_installs(guilds=True, users=True)
+    @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
     async def generate_modset(interaction: discord.Interaction, modsets: str, climates: str = "", era: Literal["modern", "scifi", "lowtech", "coldwar", "stalker"] = "", key: Literal["vanilla", "rhs"] = "", dlc: str = "", double_occ: bool = False, simple: bool = True, local: bool = True):
         modsets = modsets.split(",")
         climates = climates.split(",")
@@ -53,7 +57,9 @@ def commands_init(client):
 
         await message
 
-    @tree.command(name="map", description="Sends a 1024x1024 image of a map. You can use a steam workshop link instead of a name.", guild=guild_id)
+    @tree.command(name="map", description="Sends a 1024x1024 image of a map. You can use a steam workshop link instead of a name.")
+    @app_commands.allowed_installs(guilds=True, users=True)
+    @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
     async def map(interaction: discord.Interaction, map_name: str, local: bool = True):
 
         if ("http" in map_name):
@@ -86,7 +92,9 @@ def commands_init(client):
 
         await message
 
-    @tree.command(name="maps", description="Sends a list of supported map names.", guild=guild_id)
+    @tree.command(name="maps", description="Sends a list of supported map names.")
+    @app_commands.allowed_installs(guilds=True, users=True)
+    @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
     async def maps(interaction: discord.Interaction, local: bool = True):
         
         map_names = grab_map_names()
