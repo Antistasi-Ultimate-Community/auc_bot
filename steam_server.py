@@ -8,8 +8,15 @@ def grab_server(ip=None, port=None):
 
     server = (ip, port)
 
-    server_info = a2s.info(address=server)
-    server_players = a2s.players(address=server)
+    try:
+
+        server_info = a2s.info(address=server)
+        server_players = a2s.players(address=server)
+
+    except:
+
+        server_info = False
+        server_players = False
 
     return [server_info, server_players]
 
