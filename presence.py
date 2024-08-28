@@ -23,7 +23,7 @@ async def presence_loop(client=None):
         server_info = server[0]
 
         if (server_info == False):
-            server_name = "Unavailable"
+            server_name = "Offline"
             player_count = 0
             player_count_max = 0
         else:
@@ -42,7 +42,21 @@ async def presence_loop(client=None):
 
         player_count_formatted = f"{server_name}: {player_count}/{player_count_max}"
 
-        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name=player_count_formatted))
+        assets = {
+            "large_image": "ultimate_auc_1024", 
+            "large_text": "Keeping The Robot Rebellion At Bay", 
+            "small_image": "ultimate_auc",
+            "small_text": "Keeping The Robot Rebellion At Bay"
+        }
+
+        await client.change_presence(activity=discord.Activity(
+            application_id=1241509084344225955,
+            type=discord.ActivityType.playing, 
+            name=player_count_formatted,
+            url="https://antistasiultimate.com",
+            state="In Game",
+            assets=assets
+        ))
         await channel_player.edit(name=player_count_formatted)
 
         await asyncio.sleep(120) # 2 mins
