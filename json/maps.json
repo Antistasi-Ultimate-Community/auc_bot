@@ -310,5 +310,29 @@
     "climates": ["arid", "temperate"],
     "image": "yulakia.jpg",
     "id": "2950257727"
+  },
+  "Pulau": {
+    "map_name": "Antistasi_pulau.pulau",
+    "climates": ["tropical"],
+    "image": "placeholder.jpg",
+    "id": "1423583812"
+  },
+  "Mehland": {
+    "map_name": "Antistasi_mehland.mehland",
+    "climates": ["temperate"],
+    "image": "placeholder.jpg",
+    "id": "3317364155"
+  },
+  "Svartmarka": {
+    "map_name": "Antistasi_tem_chernarus.tem_chernarus",
+    "climates": ["temperate"],
+    "image": "placeholder.jpg",
+    "id": "1630816076"
+  },
+  "Svartmarka (Winter)": {
+    "map_name": "Antistasi_tem_chernarusw.tem_chernarusw",
+    "climates": ["temperate", "arctic"],
+    "image": "placeholder.jpg",
+    "id": "1630816076"
   }
 }
