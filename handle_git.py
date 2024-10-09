@@ -135,12 +135,11 @@ def open_pull(repo=None, base=None, head=None, title=None, body=None, author=Non
     return message
 
 def merge_pull(repo=None, number=None, merge_method="squash"):
+    pull_request = repo.get_pull(number)
+    pull_link = f"https://github.com/{repo.full_name}/pull/{pull_request.number}"
+
     try:
-        pull_request = repo.get_pull(number)
-
         merge = pull_request.merge(merge_method=merge_method)
-
-        pull_link = f"https://github.com/{repo.full_name}/pull/{pull_request.number}"
     
     except:
         message = f"[X] Something failed whilst merging `{pull_request.title}` (#{number}). - [It was aborted.]({pull_link})\nPerhaps the pull request was already merged/closed or has a merge conflict?"
