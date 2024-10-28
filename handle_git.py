@@ -134,7 +134,7 @@ def open_pull(repo=None, base=None, head=None, title=None, body=None, author=Non
 
     return message
 
-def merge_pull(repo=None, number=None, merge_method="squash"):
+def merge_pull(repo=None, number=None, merge_method="merge"):
     pull_request = repo.get_pull(number)
     pull_link = f"https://github.com/{repo.full_name}/pull/{pull_request.number}"
 

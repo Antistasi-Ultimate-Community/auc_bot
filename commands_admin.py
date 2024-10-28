@@ -100,9 +100,9 @@ def commands_admin(client, tree):
 
     @tree.command(name="git_pull_merge", description="Merges a pull request.", guild=guild_id)
     @app_commands.check(is_admin)
-    async def git_pull_merge(interaction: discord.Interaction, number: int):
+    async def git_pull_merge(interaction: discord.Interaction, number: int, merge_method: Literal["merge", "squash"]):
         repo = grab_repo(git_client=git_client, repository=guild_git_repo)
-        pull = merge_pull(repo=repo, number=number)
+        pull = merge_pull(repo=repo, number=number, merge_method=merge_method)
 
         message = send_message(interaction=interaction, message=pull, local=False)
         await message
