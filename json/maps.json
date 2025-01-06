@@ -41,6 +41,12 @@
     "image": "chernarus_winter.jpg",
     "id": "583544987"
   },
+  "Chernarus Redux": {
+    "map_name": "Antistasi_chernarusredux.chernarusredux",
+    "climates": ["temperate"],
+    "image": "placeholder.jpg",
+    "id": "1128256978"
+  },
   "Green Sea Terrain": {
     "map_name": "Antistasi_green_sea.green_sea",
     "climates": ["temperate"],

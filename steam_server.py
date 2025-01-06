@@ -3,8 +3,8 @@ import a2s
 def grab_server(ip=None, port=None):
 
     if (ip == None or port == None):
-        ip = "138.201.62.114"
-        port = 2403
+        ip = "stutpip123.ddns.net"
+        port = 2401
 
     server = (ip, port)
 
