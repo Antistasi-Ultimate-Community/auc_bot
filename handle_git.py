@@ -6,6 +6,9 @@ from handle_message_github import return_pull
 
 from file_operations import write_to_file
 
+import asyncio
+import time
+
 def git_logged_in(git_client=None):
     if (git_client != None):
         return True
@@ -166,8 +169,11 @@ def merge_pulls(repo=None, numbers=None):
     for number in numbers:
         pull_message = merge_pull(repo=repo, number=number)
         message = f"{message}\n\n{pull_message}"
+        
         if ("[X]" not in message):
             pulls_merged_num += 1
+
+        time.sleep(5)
 
     message = f"{message}\n\nMerged {pulls_merged_num} pulls.\n"
 
