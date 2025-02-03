@@ -45,15 +45,15 @@ def send_changelog(interaction, mod_type="main", changelog={"version": "10.0.0",
         thumbnail = "https://antistasiultimate.com/images/Yellow.png"
 
     embed_message = format_embed(interaction=interaction, title="Antistasi Ultimate Update", colour=colour, thumbnail=thumbnail)
-    embed_message_changelog = format_embed(interaction=interaction, title="Antistasi Ultimate Changelog", colour=colour, thumbnail=thumbnail)
+    # embed_message_changelog = format_embed(interaction=interaction, title="Antistasi Ultimate Changelog", colour=colour, thumbnail=thumbnail)
     
     changelog_version = changelog["version"]
     changelog = changelog["changelog"]
 
-    embed_message_changelog.add_field(name=f"Version: v{changelog_version}", value=f"```{changelog[0]}```\n[Full Changelog]({changelog[1]})")
-    embed_message.add_field(name=f"Target: {target}\nVersion: v{changelog_version}", value=f"\n\n[Mod Link]({target_url})\n\nSee the changelog above.\n\nTo avoid issues, please repair the mod in your launcher.\nIf applicable, reinstall the mod to your server.\n\nShould issues still persist, try a complete reinstall and if your problem doesn't go away create a help form.")
+    # embed_message_changelog.add_field(name=f"Version: v{changelog_version}", value=f"```{changelog[0]}```\n[Full Changelog]({changelog[1]})")
+    embed_message.add_field(name=f"Target: {target}\nVersion: v{changelog_version}", value=f"\n\n[Changelog]({changelog[1]})\n[Mod]({target_url})\n\nTo avoid issues, please repair the mod in your launcher.\nIf applicable, reinstall the mod to your server. The AU pbo files may need to be deleted first.\n\nShould issues still persist, try a complete reinstall and if your problem doesn't go away create a help form.")
 
-    return interaction.response.send_message(embeds=[embed_message_changelog, embed_message])
+    return interaction.response.send_message(embeds=[embed_message])
 
 def send_message(interaction, message, local=False, just_message=False):    
     try:

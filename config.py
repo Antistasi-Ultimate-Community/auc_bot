@@ -53,7 +53,7 @@ else:
 
 guild_log_file = f"logs/{guild_name_bot}_{day}_{time}-discord.log"
 guild_log_init = f"Bot initialization"
-guild_log_copyright = f"Copyright © 2023 - 2024 Antistasi Ultimate All Rights Reserved"
+guild_log_copyright = f"Antistasi Ultimate | 2023-{day.year}"
 
 git_repo_base = "https://github.com"
 
