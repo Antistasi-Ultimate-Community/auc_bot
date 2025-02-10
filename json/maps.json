@@ -340,5 +340,17 @@
     "climates": ["temperate", "arctic"],
     "image": "placeholder.jpg",
     "id": "1630816076"
+  },
+  "Stubbhult": {
+    "map_name": "Antistasi_stubbhult.stubbhult",
+    "climates": ["temperate", "arctic"],
+    "image": "placeholder.jpg",
+    "id": "3353189981"
+  },
+  "Fapovo": {
+    "map_name": "Antistasi_fapovo.fapovo",
+    "climates": ["temperate", "tropical"],
+    "image": "placeholder.jpg",
+    "id": "1910457930"
   }
 }
