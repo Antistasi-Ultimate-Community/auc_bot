@@ -352,5 +352,11 @@
     "climates": ["temperate", "tropical"],
     "image": "placeholder.jpg",
     "id": "1910457930"
+  },
+  "Isla Duala": {
+    "map_name": "Antistasi_isladuala3.isladuala3",
+    "climates": ["temperate", "arid"],
+    "image": "placeholder.jpg",
+    "id": "714149065"
   }
 }
