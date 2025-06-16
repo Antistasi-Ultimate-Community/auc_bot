@@ -113,6 +113,12 @@
     "image": "kunduz.jpg",
     "id": "421620913"
   },
+  "Kunduz River": {
+    "map_name": "Antistasi_kunduz_valley.kunduz_valley",
+    "climates": ["arid", "temperate"],
+    "image": "kunduz.jpg",
+    "id": "3078351739"
+  },
   "Lingor": {
     "map_name": "Antistasi_lingor3.lingor3",
     "climates": ["tropical"],
