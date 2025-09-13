@@ -17,7 +17,7 @@ from mg_faction import grab_modset
 
 def grab_collections(modsets=[""]):
     if (len(modsets) >= 3):
-        collections = {"all": "Too many modsets for auto-grab. You will have to look for them one by one.\nhttps://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/wiki/Mods"}
+        collections = {"all": "Too many modsets for auto-grab. You will have to look for them one by one.\nhttps://github.com/Antistasi-Ultimate-Community/A3-Antistasi-Ultimate/wiki/Mods"}
         return collections
 
     modset_dict = read_json_return_dict("modsets")

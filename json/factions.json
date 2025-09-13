@@ -876,7 +876,7 @@
     "gm":
     {
         "title": "Global Mobilization",
-        "collection": "https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/wiki/Mods#global-mobilisation",
+        "collection": "https://github.com/Antistasi-Ultimate-Community/A3-Antistasi-Ultimate/wiki/Mods#global-mobilisation",
         "factionsOcc": 
         {
             "side": "Occ",
@@ -1369,7 +1369,7 @@
     "spe_ifa":
     {
         "title": "Spearhead 1944 + IFA",
-        "collection": "https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/wiki/Mods#spearhead-1944",
+        "collection": "https://github.com/Antistasi-Ultimate-Community/A3-Antistasi-Ultimate/wiki/Mods#spearhead-1944",
         "factionsOcc": 
         {
             "side": "Occ",
@@ -1714,7 +1714,7 @@
     "vn":
     {
         "title": "SOGPF",
-        "collection": "https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/wiki/Mods#sog-prairie-fire",
+        "collection": "https://github.com/Antistasi-Ultimate-Community/A3-Antistasi-Ultimate/wiki/Mods#sog-prairie-fire",
         "factionsOcc":
         {
             "side": "Occ",
@@ -1781,7 +1781,7 @@
     "ws":
     {
         "title": "Western Sahara",
-        "collection": "https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/wiki/Mods#western-sahara",
+        "collection": "https://github.com/Antistasi-Ultimate-Community/A3-Antistasi-Ultimate/wiki/Mods#western-sahara",
         "factionsReb":
         {
             "side": "Reb",

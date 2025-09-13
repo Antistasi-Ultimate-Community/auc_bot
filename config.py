@@ -57,7 +57,7 @@ guild_log_copyright = f"Antistasi Ultimate | 2023-{day.year}"
 
 git_repo_base = "https://github.com"
 
-guild_git_repo_normal = f"SilenceIsFatto/A3-Antistasi-Ultimate"
+guild_git_repo_normal = f"Antistasi-Ultimate-Community/A3-Antistasi-Ultimate"
 guild_git_repo_debug = f"Antistasi-Ultimate-Community/testing-grounds"
 guild_git_repo_bot = f"{git_repo_base}/Antistasi-Ultimate-Community/auc_bot"
 

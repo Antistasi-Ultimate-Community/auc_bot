@@ -20,7 +20,7 @@ def grab_repo(git_client=None, repository=""):
         raise Exception(f"git_client returned {git_client}")
 
     if (repository == ""):
-        repository = "SilenceIsFatto/A3-Antistasi-Ultimate"
+        repository = "Antistasi-Ultimate-Community/A3-Antistasi-Ultimate"
         # raise Exception(f"repository returned {repository}, needs to be in format 'Owner/Repo'")
 
     repo = git_client.get_repo(repository)

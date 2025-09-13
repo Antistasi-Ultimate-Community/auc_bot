@@ -56,7 +56,7 @@ def commands_moderator(client, tree):
         if (not isinstance(pr_index, int)):
             return False
 
-        url = f"https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/pull/{pr_index}"
+        url = f"https://github.com/Antistasi-Ultimate-Community/A3-Antistasi-Ultimate/pull/{pr_index}"
         message = send_url(interaction=interaction, url=url, local=False, suppress=True)
         await message
 
@@ -66,7 +66,7 @@ def commands_moderator(client, tree):
         if (not isinstance(issue_index, int)):
             return False
             
-        url = f"https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/issues/{issue_index}"
+        url = f"https://github.com/Antistasi-Ultimate-Community/A3-Antistasi-Ultimate/issues/{issue_index}"
         message = send_url(interaction=interaction, url=url, local=False, suppress=True)
         await message
 
@@ -75,9 +75,9 @@ def commands_moderator(client, tree):
     async def wiki(interaction: discord.Interaction, wiki_page: Literal["FAQ", "Arms-Dealer", "Features", "Maps", "Mods", "Extender-Addons", "Developers", "Developer-Documentation"] = "", reply_target: str = ""):
 
         if (wiki_page != ""):
-            url = f"https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/wiki/{wiki_page}"
+            url = f"https://github.com/Antistasi-Ultimate-Community/A3-Antistasi-Ultimate/wiki/{wiki_page}"
         else:
-            url = f"https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/wiki"
+            url = f"https://github.com/Antistasi-Ultimate-Community/A3-Antistasi-Ultimate/wiki"
 
         if (check_url(url=url) != True):
             return False
