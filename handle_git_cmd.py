@@ -33,12 +33,16 @@ def git_pull(repository=""):
 
 def restart_bot(client, pull=False):
 
-    if (pull):
-        git_pull(guild_git_repo_bot)
+    # if (pull):
+        # git_pull(guild_git_repo_bot)
 
-        install_libraries("requirements.txt")
+        # install_libraries("requirements.txt")
 
-    os.execl(sys.executable, "python", "main.py")
+    exec_path = os.path.join(os.getcwd(), "auc_bot/main.py")
+
+    print(exec_path)
+
+    os.execl(sys.executable, "python", exec_path)
 
 if (__name__ == "__main__"):
     git_pull(guild_git_repo_bot)

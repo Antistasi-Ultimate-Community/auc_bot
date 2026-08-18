@@ -364,5 +364,41 @@
     "climates": ["temperate", "arid"],
     "image": "placeholder.jpg",
     "id": "714149065"
+  },
+  "Drakovac": {
+    "map_name": "Antistasi_drakovac.drakovac",
+    "climates": ["temperate"],
+    "image": "placeholder.jpg",
+    "id": "3523961062"
+  },
+  "Korsac": {
+    "map_name": "Antistasi_VTF_Korsac.VTF_Korsac",
+    "climates": ["temperate", "arctic"],
+    "image": "placeholder.jpg",
+    "id": "3043043427"
+  },
+  "Kingdom of Regero": {
+    "map_name": "Antistasi_regero.regero",
+    "climates": ["arid"],
+    "image": "placeholder.jpg",
+    "id": "2278254320"
+  },
+  "Bornholm": {
+    "map_name": "Antistasi_bornholm.bornholm",
+    "climates": ["temperate"],
+    "image": "placeholder.jpg",
+    "id": "2914536900"
+  },
+  "Laghisola": {
+    "map_name": "Antistasi_egl_laghisola.egl_laghisola",
+    "climates": ["tropical"],
+    "image": "placeholder.jpg",
+    "id": "2175069333"
+  },
+  "Armavir": {
+    "map_name": "Antistasi_UMB_Armavir.UMB_Armavir",
+    "climates": ["tropical"],
+    "image": "placeholder.jpg",
+    "id": "2636365838"
   }
 }

@@ -29,7 +29,7 @@ debug = False # Keep as false unless you know exactly what this does
 ```
 github_login can also be account login tuple `("account name", "password")` but this is feature limited.
 
-In order for the command `/restart_bot` to work, [git](https://git-scm.com/download/win) needs to be installed.
+In order for the command `/reset_bot` to work, [git](https://git-scm.com/download/win) needs to be installed.
 
 # Features:
 A ton of slash commands to make life easier. Namely:

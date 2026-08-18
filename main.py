@@ -41,7 +41,7 @@ if not os.path.exists("logs"):
 handler = logging.FileHandler(filename=guild_log_file, encoding='utf-8', mode='w')
 
 intents = discord.Intents.default()
-intents.message_content = True
+# intents.message_content = True
 
 # def signal_handler(signal, frame):
 #     sys.exit(0)

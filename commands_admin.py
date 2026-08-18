@@ -149,9 +149,9 @@ def commands_admin(client, tree):
             message = send_message(interaction=interaction, message=f"Shutdown was not confirmed.", local=True)
             await message
             
-    @tree.command(name="restart_bot", description="Restarts the bot.", guild=guild_id)
+    @tree.command(name="reset_bot", description="Restarts the bot.", guild=guild_id)
     @app_commands.check(is_admin)
-    async def restart_bot(interaction: discord.Interaction, confirm: bool, pull: bool = False):
+    async def reset_bot(interaction: discord.Interaction, confirm: bool, pull: bool = False):
         if (confirm):
             log_message(-1, (f"{interaction.user.display_name} ({interaction.user.id}) is attempting restart."), header=guild_log_init, space=True)
             message = send_message(interaction=interaction, message=f"Restarting the bot now.", local=False)
@@ -185,7 +185,7 @@ def commands_admin(client, tree):
     @changelog.error
     @embed.error
     @shutdown_bot.error
-    @restart_bot.error
+    @reset_bot.error
     @custom_message.error
     @send_latest_log.error
     async def say_error(interaction : discord.Interaction, error):
