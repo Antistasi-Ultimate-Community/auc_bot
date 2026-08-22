@@ -32,14 +32,7 @@ def handle_message(client):
 
         client_id = client.user.id
 
-        # Ideally we shouldn't be running grab_exempt_channels each time a message is sent, but caching isn't viable rn
-        if (channel in grab_exempt_channels(client)):
-            return False
-
         if (author_id == client_id):
-            return False
-
-        if (content == "" or content == None):
             return False
 
         if (author_id in [guild_user_webhook_id, 474144080801169418]):
@@ -50,8 +43,16 @@ def handle_message(client):
         if (identifier_is_github(content=content)):
             reply = identifier_github(content=content)
 
-        log_message(-1, f"{author_name}:\n{content} ({channel})")
-        embed = log_message_channel(message=content, author=author, channel=channel, message_link=message_link)
+        # Ideally we shouldn't be running grab_exempt_channels each time a message is sent, but caching isn't viable rn
+        # if (channel in grab_exempt_channels(client)):
+        #     return False
+
+        if (content == "" or content == None):
+            return False
+
+        # Logging is dead now because of intents anyway
+        # log_message(-1, f"{author_name}:\n{content} ({channel})")
+        # embed = log_message_channel(message=content, author=author, channel=channel, message_link=message_link)
 
         if (reply != None):
             await channel.send(reply)
