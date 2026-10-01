@@ -4,7 +4,7 @@ def grab_server(ip=None, port=None):
 
     if (ip == None or port == None):
         ip = "stutpip123.ddns.net"
-        port = 2401
+        port = 2400
 
     server = (ip, port)
 
